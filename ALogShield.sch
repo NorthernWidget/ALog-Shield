@@ -15838,13 +15838,6 @@ LETTER portrait</description>
 <pinref part="P+9" gate="VCC" pin="VCC"/>
 </segment>
 </net>
-<net name="CS" class="0">
-<segment>
-<wire x1="53.34" y1="-63.5" x2="63.5" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="CS"/>
-<label x="53.34" y="-63.5" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="DI" class="0">
 <segment>
 <wire x1="53.34" y1="-66.04" x2="63.5" y2="-66.04" width="0.1524" layer="91"/>
@@ -16418,6 +16411,11 @@ LETTER portrait</description>
 <wire x1="220.98" y1="-299.72" x2="210.82" y2="-299.72" width="0.1524" layer="91"/>
 <label x="210.82" y="-299.72" size="1.778" layer="95"/>
 <pinref part="LSHIFT1" gate="C" pin="I"/>
+</segment>
+<segment>
+<wire x1="53.34" y1="-63.5" x2="63.5" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="CS"/>
+<label x="53.34" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DTR" class="0">
