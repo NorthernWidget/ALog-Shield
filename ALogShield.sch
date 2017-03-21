@@ -14655,224 +14655,61 @@ LETTER portrait</description>
 </library>
 <library name="csandell">
 <packages>
-<package name="6-TMLF">
-<smd name="3" x="0" y="-0.65" dx="0.2" dy="0.7" layer="1"/>
-<smd name="6" x="0" y="0.65" dx="0.2" dy="0.7" layer="1"/>
-<smd name="5" x="0.65" y="0.25" dx="0.2" dy="0.7" layer="1" rot="R90"/>
-<smd name="4" x="0.65" y="-0.25" dx="0.2" dy="0.7" layer="1" rot="R90"/>
-<smd name="2" x="-0.65" y="-0.25" dx="0.2" dy="0.7" layer="1" rot="R90"/>
-<smd name="1" x="-0.65" y="0.25" dx="0.2" dy="0.7" layer="1" rot="R90"/>
+<package name="6-TMLF_SMD_PADS">
+<circle x="-0.7" y="0.55" radius="0.05" width="0.1" layer="21"/>
 <wire x1="-0.5" y1="0.5" x2="0.5" y2="0.5" width="0.1" layer="51"/>
 <wire x1="0.5" y1="0.5" x2="0.5" y2="-0.5" width="0.1" layer="51"/>
 <wire x1="0.5" y1="-0.5" x2="-0.5" y2="-0.5" width="0.1" layer="51"/>
 <wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.1" layer="51"/>
-<circle x="-0.7" y="0.55" radius="0.05" width="0.1" layer="21"/>
 <wire x1="0.85" y1="0.85" x2="-0.85" y2="0.85" width="0.1" layer="21"/>
 <wire x1="-0.85" y1="0.85" x2="-0.85" y2="-0.85" width="0.1" layer="21"/>
 <wire x1="-0.85" y1="-0.85" x2="0.85" y2="-0.85" width="0.1" layer="21"/>
 <wire x1="0.85" y1="-0.85" x2="0.85" y2="0.85" width="0.1" layer="21"/>
+<smd name="1" x="-0.7" y="0.25" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="-0.7" y="-0.25" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="3" x="0" y="-0.65" dx="0.2" dy="0.9" layer="1"/>
+<smd name="4" x="0.7" y="-0.25" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="5" x="0.7" y="0.25" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="6" x="0" y="0.65" dx="0.2" dy="0.9" layer="1"/>
 <text x="1" y="0.5" size="0.6096" layer="25">&gt;Name</text>
 <text x="1" y="-0.5" size="0.6096" layer="21">&gt;Value</text>
-<polygon width="0" layer="1">
-<vertex x="-0.1" y="0.5"/>
-<vertex x="-0.15" y="0.5"/>
-<vertex x="-0.15" y="1"/>
-<vertex x="0.15" y="1"/>
-<vertex x="0.15" y="0.5"/>
-<vertex x="0.1" y="0.5"/>
-<vertex x="0.1" y="0.3"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="0.3" y="0.35"/>
-<vertex x="0.5" y="0.35"/>
-<vertex x="0.5" y="0.45"/>
-<vertex x="1" y="0.45"/>
-<vertex x="1" y="0.15"/>
-<vertex x="0.3" y="0.15"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="0.3" y="-0.15"/>
-<vertex x="1" y="-0.15"/>
-<vertex x="1" y="-0.45"/>
-<vertex x="0.5" y="-0.45"/>
-<vertex x="0.5" y="-0.35"/>
-<vertex x="0.3" y="-0.35"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="0.1" y="-0.5"/>
-<vertex x="0.15" y="-0.5"/>
-<vertex x="0.15" y="-1"/>
-<vertex x="-0.15" y="-1"/>
-<vertex x="-0.15" y="-0.5"/>
-<vertex x="-0.1" y="-0.5"/>
-<vertex x="-0.1" y="-0.3"/>
-<vertex x="0.1" y="-0.3"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="-0.3" y="-0.15"/>
-<vertex x="-1" y="-0.15"/>
-<vertex x="-1" y="-0.45"/>
-<vertex x="-0.5" y="-0.45"/>
-<vertex x="-0.5" y="-0.35"/>
-<vertex x="-0.3" y="-0.35"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="-1" y="0.15"/>
-<vertex x="-1" y="0.45"/>
-<vertex x="-0.5" y="0.45"/>
-<vertex x="-0.5" y="0.35"/>
-<vertex x="-0.3" y="0.35"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="-0.5" y="0.45"/>
-<vertex x="-1" y="0.45"/>
-<vertex x="-1" y="0.15"/>
-<vertex x="-0.3" y="0.15"/>
-<vertex x="-0.3" y="0.35"/>
-<vertex x="-0.5" y="0.35"/>
-</polygon>
-<polygon width="0" layer="29">
-<vertex x="-0.15" y="1"/>
-<vertex x="0.15" y="1"/>
-<vertex x="0.15" y="0.5"/>
-<vertex x="0.1" y="0.5"/>
-<vertex x="0.1" y="0.3"/>
-<vertex x="-0.1" y="0.3"/>
-<vertex x="-0.1" y="0.5"/>
-<vertex x="-0.15" y="0.5"/>
-</polygon>
-<polygon width="0" layer="29">
-<vertex x="0.3" y="0.15"/>
-<vertex x="1" y="0.15"/>
-<vertex x="1" y="0.45"/>
-<vertex x="0.5" y="0.45"/>
-<vertex x="0.5" y="0.35"/>
-<vertex x="0.3" y="0.35"/>
-</polygon>
-<polygon width="0" layer="29">
-<vertex x="0.3" y="-0.15"/>
-<vertex x="1" y="-0.15"/>
-<vertex x="1" y="-0.45"/>
-<vertex x="0.5" y="-0.45"/>
-<vertex x="0.5" y="-0.35"/>
-<vertex x="0.3" y="-0.35"/>
-</polygon>
-<polygon width="0" layer="29">
-<vertex x="-0.5" y="0.45"/>
-<vertex x="-1" y="0.45"/>
-<vertex x="-1" y="0.15"/>
-<vertex x="-0.3" y="0.15"/>
-<vertex x="-0.3" y="0.35"/>
-<vertex x="-0.5" y="0.35"/>
-</polygon>
-<polygon width="0" layer="29">
-<vertex x="-1" y="-0.15"/>
-<vertex x="-0.3" y="-0.15"/>
-<vertex x="-0.3" y="-0.35"/>
-<vertex x="-0.5" y="-0.35"/>
-<vertex x="-0.5" y="-0.45"/>
-<vertex x="-1" y="-0.45"/>
-</polygon>
-<polygon width="0" layer="29">
-<vertex x="-0.1" y="-0.3"/>
-<vertex x="-0.1" y="-0.5"/>
-<vertex x="-0.15" y="-0.5"/>
-<vertex x="-0.15" y="-1"/>
-<vertex x="0.15" y="-1"/>
-<vertex x="0.15" y="-0.5"/>
-<vertex x="0.1" y="-0.5"/>
-<vertex x="0.1" y="-0.3"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="-0.5" y="0.45"/>
-<vertex x="-1" y="0.45"/>
-<vertex x="-1" y="0.15"/>
-<vertex x="-0.3" y="0.15"/>
-<vertex x="-0.3" y="0.35"/>
-<vertex x="-0.5" y="0.35"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="-0.3" y="-0.15"/>
-<vertex x="-1" y="-0.15"/>
-<vertex x="-1" y="-0.45"/>
-<vertex x="-0.5" y="-0.45"/>
-<vertex x="-0.5" y="-0.35"/>
-<vertex x="-0.3" y="-0.35"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="-0.1" y="-0.3"/>
-<vertex x="-0.1" y="-0.5"/>
-<vertex x="-0.15" y="-0.5"/>
-<vertex x="-0.15" y="-1"/>
-<vertex x="0.15" y="-1"/>
-<vertex x="0.15" y="-0.5"/>
-<vertex x="0.1" y="-0.5"/>
-<vertex x="0.1" y="-0.3"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="0.3" y="-0.15"/>
-<vertex x="1" y="-0.15"/>
-<vertex x="1" y="-0.45"/>
-<vertex x="0.5" y="-0.45"/>
-<vertex x="0.5" y="-0.35"/>
-<vertex x="0.3" y="-0.35"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="0.3" y="0.15"/>
-<vertex x="1" y="0.15"/>
-<vertex x="1" y="0.45"/>
-<vertex x="0.5" y="0.45"/>
-<vertex x="0.5" y="0.35"/>
-<vertex x="0.3" y="0.35"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="-0.15" y="1"/>
-<vertex x="0.15" y="1"/>
-<vertex x="0.15" y="0.5"/>
-<vertex x="0.1" y="0.5"/>
-<vertex x="0.1" y="0.3"/>
-<vertex x="-0.1" y="0.3"/>
-<vertex x="-0.1" y="0.5"/>
-<vertex x="-0.15" y="0.5"/>
-</polygon>
+<smd name="7" x="-0.8" y="0.35" dx="0.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="-0.8" y="-0.35" dx="0.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="11" x="0.8" y="0.35" dx="0.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="10" x="0.8" y="-0.35" dx="0.4" dy="0.6" layer="1" rot="R90"/>
+<smd name="12" x="0" y="0.8" dx="0.4" dy="0.6" layer="1" rot="R180"/>
+<smd name="9" x="0" y="-0.8" dx="0.4" dy="0.6" layer="1"/>
 </package>
 </packages>
 <symbols>
 <symbol name="MIC5380">
 <wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="0" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="VOUT1" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="VOUT2" x="15.24" y="0" length="middle" direction="pwr" rot="R180"/>
-<pin name="EN2" x="15.24" y="-5.08" length="middle" direction="in" rot="R180"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
 <pin name="EN1" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="EN2" x="15.24" y="-5.08" length="middle" direction="in" rot="R180"/>
 <pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
 <pin name="VIN" x="-15.24" y="5.08" length="middle" direction="pwr"/>
+<pin name="VOUT1" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="VOUT2" x="15.24" y="0" length="middle" direction="pwr" rot="R180"/>
 <text x="-7.62" y="15.24" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MIC5380" prefix="LDO" uservalue="yes">
-<description>Duel 3.3V Low drop out regulator.  Digikey: 576-3453-1-ND</description>
+<deviceset name="MIC5380_LARGE_PADS">
 <gates>
 <gate name="G$1" symbol="MIC5380" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="6-TMLF">
+<device name="" package="6-TMLF_SMD_PADS">
 <connects>
-<connect gate="G$1" pin="EN1" pad="4"/>
-<connect gate="G$1" pin="EN2" pad="3"/>
-<connect gate="G$1" pin="GND" pad="5"/>
-<connect gate="G$1" pin="VIN" pad="6"/>
-<connect gate="G$1" pin="VOUT1" pad="1"/>
-<connect gate="G$1" pin="VOUT2" pad="2"/>
+<connect gate="G$1" pin="EN1" pad="4 10"/>
+<connect gate="G$1" pin="EN2" pad="3 9"/>
+<connect gate="G$1" pin="GND" pad="5 11"/>
+<connect gate="G$1" pin="VIN" pad="6 12"/>
+<connect gate="G$1" pin="VOUT1" pad="1 7"/>
+<connect gate="G$1" pin="VOUT2" pad="2 8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15663,7 +15500,6 @@ Source: RS Component / Phycomp</description>
 <part name="SD_3V5" library="supply1" deviceset="VDD" device=""/>
 <part name="SD_3V6" library="supply1" deviceset="VDD" device=""/>
 <part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
-<part name="3V3" library="csandell" deviceset="MIC5380" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="H2" library="SparkFun" deviceset="M08" device="3.5MM-8"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_04" device="SCREW"/>
@@ -15679,6 +15515,7 @@ Source: RS Component / Phycomp</description>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_04" device="SCREW"/>
 <part name="I2C_PU_" library="resistor-dil" deviceset="4R-N" device="0603-ARC" value="3.3K"/>
+<part name="3V1" library="csandell" deviceset="MIC5380_LARGE_PADS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15817,7 +15654,6 @@ Source: RS Component / Phycomp</description>
 <instance part="SD_3V5" gate="G$1" x="254" y="-289.56"/>
 <instance part="SD_3V6" gate="G$1" x="307.34" y="-276.86"/>
 <instance part="+3V16" gate="G$1" x="20.32" y="-129.54"/>
-<instance part="3V3" gate="G$1" x="261.62" y="-38.1"/>
 <instance part="+3V4" gate="G$1" x="27.94" y="-124.46"/>
 <instance part="H2" gate="G$1" x="55.88" y="-121.92" rot="R180"/>
 <instance part="J1" gate="G$1" x="55.88" y="-137.16" rot="R180"/>
@@ -15848,6 +15684,7 @@ Source: RS Component / Phycomp</description>
 <attribute name="VALUE" x="122.428" y="-401.32" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="127.508" y="-403.86" size="1.778" layer="95" rot="R90"/>
 </instance>
+<instance part="3V1" gate="G$1" x="261.62" y="-38.1"/>
 </instances>
 <busses>
 </busses>
@@ -15893,7 +15730,7 @@ Source: RS Component / Phycomp</description>
 <junction x="241.3" y="-33.02"/>
 <pinref part="P+22" gate="VCC" pin="VCC"/>
 <wire x1="231.14" y1="-33.02" x2="231.14" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="3V3" gate="G$1" pin="VIN"/>
+<pinref part="3V1" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="-134.62" x2="50.8" y2="-134.62" width="0.1524" layer="91"/>
@@ -16139,7 +15976,7 @@ Source: RS Component / Phycomp</description>
 <pinref part="CLOCK_CIN1" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="-53.34" x2="241.3" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="281.94" y="-55.88"/>
-<pinref part="3V3" gate="G$1" pin="GND"/>
+<pinref part="3V1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -16268,7 +16105,7 @@ Source: RS Component / Phycomp</description>
 <junction x="281.94" y="-33.02"/>
 <wire x1="294.64" y1="-33.02" x2="294.64" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="-22.86" x2="279.4" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="3V3" gate="G$1" pin="VOUT1"/>
+<pinref part="3V1" gate="G$1" pin="VOUT1"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="-132.08" x2="20.32" y2="-132.08" width="0.1524" layer="91"/>
@@ -16445,8 +16282,8 @@ Source: RS Component / Phycomp</description>
 <wire x1="292.1" y1="-38.1" x2="307.34" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="SD_3V4" gate="G$1" pin="VDD"/>
 <wire x1="307.34" y1="-38.1" x2="307.34" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="3V3" gate="G$1" pin="VOUT2"/>
 <junction x="292.1" y="-38.1"/>
+<pinref part="3V1" gate="G$1" pin="VOUT2"/>
 </segment>
 <segment>
 <wire x1="254" y1="-294.64" x2="259.08" y2="-294.64" width="0.1524" layer="91"/>
@@ -16534,7 +16371,7 @@ Source: RS Component / Phycomp</description>
 <segment>
 <wire x1="246.38" y1="-43.18" x2="208.28" y2="-43.18" width="0.1524" layer="91"/>
 <label x="208.28" y="-43.18" size="1.778" layer="95"/>
-<pinref part="3V3" gate="G$1" pin="EN1"/>
+<pinref part="3V1" gate="G$1" pin="EN1"/>
 </segment>
 <segment>
 <wire x1="53.34" y1="-45.72" x2="63.5" y2="-45.72" width="0.1524" layer="91"/>
@@ -16546,7 +16383,7 @@ Source: RS Component / Phycomp</description>
 <segment>
 <wire x1="276.86" y1="-43.18" x2="325.12" y2="-43.18" width="0.1524" layer="91"/>
 <label x="297.18" y="-43.18" size="1.778" layer="95"/>
-<pinref part="3V3" gate="G$1" pin="EN2"/>
+<pinref part="3V1" gate="G$1" pin="EN2"/>
 </segment>
 <segment>
 <wire x1="53.34" y1="-50.8" x2="63.5" y2="-50.8" width="0.1524" layer="91"/>
