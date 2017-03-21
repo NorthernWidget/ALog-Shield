@@ -13761,30 +13761,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;&lt;author&gt;THIS LIBRARY IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED.&lt;br&gt;Copyright (C) 2007, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;
 &lt;/author&gt;</description>
 <packages>
-<package name="CECJ-0805">
-<description>&lt;b&gt;CAPACITOR ARRAY&lt;/b&gt; - Panasonic&lt;p&gt;
-0.8 mm lead spacing, ECJ-0805 Series, grid 0.05 mm</description>
-<wire x1="-1.1" y1="0.65" x2="-1.1" y2="-0.65" width="0.2032" layer="51"/>
-<wire x1="1.1" y1="-0.65" x2="1.1" y2="0.65" width="0.2032" layer="51"/>
-<wire x1="-1.1" y1="0.65" x2="1.1" y2="0.65" width="0.2032" layer="51"/>
-<wire x1="-1.1" y1="-0.65" x2="1.1" y2="-0.65" width="0.2032" layer="51"/>
-<wire x1="-1.1906" y1="1.27" x2="1.1906" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.1906" y1="1.27" x2="1.1906" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.1906" y1="-1.27" x2="-1.1906" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-1.1906" y1="-1.27" x2="-1.1906" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-0.75" y1="-0.15" x2="-0.95" y2="0.05" width="0.2032" layer="21"/>
-<wire x1="-0.55" y1="0.05" x2="-0.75" y2="-0.15" width="0.2032" layer="21"/>
-<smd name="C2" x="0.25" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="B2" x="-0.25" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="D2" x="0.75" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="A2" x="-0.75" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="A1" x="-0.75" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="B1" x="-0.25" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="C1" x="0.25" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="D1" x="0.75" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<text x="-1.524" y="-1.016" size="0.8128" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="2.032" y="-1.016" size="0.6096" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-</package>
 <package name="CECJ-1206">
 <description>&lt;b&gt;CAPACITOR ARRAY&lt;/b&gt; - Panasonic&lt;p&gt;
 0.8 mm lead spacing, ECJ-1206 Series, grid 0.10 mm</description>
@@ -13798,16 +13774,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-1.667" y1="-1.5081" x2="-1.667" y2="1.5081" width="0.2032" layer="21"/>
 <wire x1="-1.2" y1="-0.3" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
 <wire x1="-1" y1="-0.1" x2="-1.2" y2="-0.3" width="0.2032" layer="21"/>
-<smd name="C2" x="0.4" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="B2" x="-0.4" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="A2" x="-1.2" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="D2" x="1.2" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="A1" x="-1.2" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="B1" x="-0.4" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="C1" x="0.4" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="D1" x="1.2" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<text x="-2.032" y="-1.397" size="0.8128" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-1.397" size="0.6096" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="-1.4" y1="0.5" x2="-1" y2="0.8" layer="51"/>
 <rectangle x1="-0.6" y1="0.5" x2="-0.2" y2="0.8" layer="51"/>
 <rectangle x1="0.2" y1="0.5" x2="0.6" y2="0.8" layer="51"/>
@@ -13816,6 +13782,71 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.6" y1="-0.8" x2="-0.2" y2="-0.5" layer="51"/>
 <rectangle x1="0.2" y1="-0.8" x2="0.6" y2="-0.5" layer="51"/>
 <rectangle x1="1" y1="-0.8" x2="1.4" y2="-0.5" layer="51"/>
+<smd name="A1" x="-1.2" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
+<smd name="A2" x="-1.2" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
+<smd name="B1" x="-0.4" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
+<smd name="B2" x="-0.4" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
+<smd name="C1" x="0.4" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
+<smd name="C2" x="0.4" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
+<smd name="D1" x="1.2" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
+<smd name="D2" x="1.2" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
+<text x="-2.032" y="-1.397" size="0.8128" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="2.54" y="-1.397" size="0.6096" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+</package>
+<package name="CECJ-0805">
+<description>&lt;b&gt;CAPACITOR ARRAY&lt;/b&gt; - Panasonic&lt;p&gt;
+0.8 mm lead spacing, ECJ-0805 Series, grid 0.05 mm</description>
+<wire x1="-1.1" y1="0.65" x2="-1.1" y2="-0.65" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="-0.65" x2="1.1" y2="0.65" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="0.65" x2="1.1" y2="0.65" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="-0.65" x2="1.1" y2="-0.65" width="0.2032" layer="51"/>
+<wire x1="-1.1906" y1="1.27" x2="1.1906" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.1906" y1="1.27" x2="1.1906" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.1906" y1="-1.27" x2="-1.1906" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.1906" y1="-1.27" x2="-1.1906" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-0.75" y1="-0.15" x2="-0.95" y2="0.05" width="0.2032" layer="21"/>
+<wire x1="-0.55" y1="0.05" x2="-0.75" y2="-0.15" width="0.2032" layer="21"/>
+<smd name="A1" x="-0.75" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="A2" x="-0.75" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="B1" x="-0.25" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="B2" x="-0.25" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="C1" x="0.25" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="C2" x="0.25" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="D1" x="0.75" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<smd name="D2" x="0.75" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
+<text x="-1.524" y="-1.016" size="0.8128" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="2.032" y="-1.016" size="0.6096" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+</package>
+<package name="CECJ-CTS-031817">
+<description>Lengthen pads</description>
+<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.2032" layer="51"/>
+<wire x1="1.6" y1="-0.8" x2="1.6" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.2032" layer="51"/>
+<wire x1="-1.667" y1="1.5081" x2="1.6669" y2="1.5081" width="0.2032" layer="21"/>
+<wire x1="1.6669" y1="1.5081" x2="1.6669" y2="-1.5081" width="0.2032" layer="21"/>
+<wire x1="1.6669" y1="-1.5081" x2="-1.667" y2="-1.5081" width="0.2032" layer="21"/>
+<wire x1="-1.667" y1="-1.5081" x2="-1.667" y2="1.5081" width="0.2032" layer="21"/>
+<wire x1="-1.2" y1="-0.3" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-0.1" x2="-1.2" y2="-0.3" width="0.2032" layer="21"/>
+<rectangle x1="-1.4" y1="0.5" x2="-1" y2="0.8" layer="51"/>
+<rectangle x1="-0.6" y1="0.5" x2="-0.2" y2="0.8" layer="51"/>
+<rectangle x1="0.2" y1="0.5" x2="0.6" y2="0.8" layer="51"/>
+<rectangle x1="1" y1="0.5" x2="1.4" y2="0.8" layer="51"/>
+<rectangle x1="-1.4" y1="-0.8" x2="-1" y2="-0.5" layer="51"/>
+<rectangle x1="-0.6" y1="-0.8" x2="-0.2" y2="-0.5" layer="51"/>
+<rectangle x1="0.2" y1="-0.8" x2="0.6" y2="-0.5" layer="51"/>
+<rectangle x1="1" y1="-0.8" x2="1.4" y2="-0.5" layer="51"/>
+<smd name="A1" x="-1.2" y="-0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
+<smd name="A2" x="-1.2" y="0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
+<smd name="B1" x="-0.4" y="-0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
+<smd name="B2" x="-0.4" y="0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
+<smd name="C1" x="0.4" y="-0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
+<smd name="C2" x="0.4" y="0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
+<smd name="D1" x="1.2" y="-0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
+<smd name="D2" x="1.2" y="0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
+<text x="-2.032" y="-1.397" size="0.8128" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="2.54" y="-1.397" size="0.6096" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -13826,12 +13857,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.635" y1="0" x2="0.635" y2="-1.5875" width="0.508" layer="94"/>
 <wire x1="-0.635" y1="1.5875" x2="-0.635" y2="0" width="0.508" layer="94"/>
 <wire x1="-0.635" y1="0" x2="-0.635" y2="-1.5875" width="0.508" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-2.794" y="-1.27" size="0.8636" layer="93">1</text>
 <text x="2.286" y="-1.27" size="0.8636" layer="93">2</text>
 <text x="1.905" y="1.27" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-4.1275" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13860,6 +13891,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technologies>
 </device>
 <device name="ECJ-1206" package="CECJ-1206">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="B" pin="1" pad="B1"/>
+<connect gate="B" pin="2" pad="B2"/>
+<connect gate="C" pin="1" pad="C1"/>
+<connect gate="C" pin="2" pad="C2"/>
+<connect gate="D" pin="1" pad="D1"/>
+<connect gate="D" pin="2" pad="D2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="CECJ-CTS-031817">
 <connects>
 <connect gate="A" pin="1" pad="A1"/>
 <connect gate="A" pin="2" pad="A2"/>
@@ -15477,7 +15523,6 @@ Source: RS Component / Phycomp</description>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
 <part name="SUPPLY52" library="supply2" deviceset="GND" device=""/>
 <part name="RESET" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH" value="Reset"/>
-<part name="C14" library="rc-master-smd" deviceset="CCA_" device="ECJ-1206" value="10nF"/>
 <part name="SUPPLY53" library="supply2" deviceset="GND" device=""/>
 <part name="CLOCK_BATT_DECOUP" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY56" library="supply2" deviceset="GND" device=""/>
@@ -15516,6 +15561,7 @@ Source: RS Component / Phycomp</description>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_04" device="SCREW"/>
 <part name="I2C_PU_" library="resistor-dil" deviceset="4R-N" device="0603-ARC" value="3.3K"/>
 <part name="3V1" library="csandell" deviceset="MIC5380_LARGE_PADS" device=""/>
+<part name="C15" library="rc-master-smd" deviceset="CCA_" device="" value="10nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -15597,10 +15643,6 @@ Source: RS Component / Phycomp</description>
 <instance part="LOGO2" gate="G$1" x="213.36" y="-485.14"/>
 <instance part="SUPPLY52" gate="GND" x="109.22" y="-200.66"/>
 <instance part="RESET" gate="G$1" x="157.48" y="-182.88" rot="R90"/>
-<instance part="C14" gate="A" x="48.26" y="-195.58"/>
-<instance part="C14" gate="B" x="48.26" y="-185.42"/>
-<instance part="C14" gate="C" x="48.26" y="-175.26"/>
-<instance part="C14" gate="D" x="48.26" y="-165.1"/>
 <instance part="SUPPLY53" gate="GND" x="63.5" y="-208.28"/>
 <instance part="CLOCK_BATT_DECOUP" gate="G$1" x="99.06" y="-411.48" smashed="yes">
 <attribute name="VALUE" x="100.584" y="-416.179" size="1.778" layer="96"/>
@@ -15685,6 +15727,10 @@ Source: RS Component / Phycomp</description>
 <attribute name="NAME" x="127.508" y="-403.86" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="3V1" gate="G$1" x="261.62" y="-38.1"/>
+<instance part="C15" gate="A" x="48.26" y="-195.58"/>
+<instance part="C15" gate="B" x="48.26" y="-185.42"/>
+<instance part="C15" gate="C" x="48.26" y="-175.26"/>
+<instance part="C15" gate="D" x="48.26" y="-165.1"/>
 </instances>
 <busses>
 </busses>
@@ -15927,18 +15973,18 @@ Source: RS Component / Phycomp</description>
 <segment>
 <pinref part="SUPPLY53" gate="GND" pin="GND"/>
 <wire x1="63.5" y1="-165.1" x2="63.5" y2="-175.26" width="0.1524" layer="91"/>
-<pinref part="C14" gate="D" pin="2"/>
+<pinref part="C15" gate="D" pin="2"/>
 <wire x1="63.5" y1="-175.26" x2="63.5" y2="-185.42" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-185.42" x2="63.5" y2="-195.58" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-195.58" x2="63.5" y2="-205.74" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-165.1" x2="63.5" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="C14" gate="C" pin="2"/>
+<wire x1="63.5" y1="-165.1" x2="50.8" y2="-165.1" width="0.1524" layer="91"/>
+<pinref part="C15" gate="C" pin="2"/>
 <wire x1="50.8" y1="-175.26" x2="63.5" y2="-175.26" width="0.1524" layer="91"/>
 <junction x="63.5" y="-175.26"/>
-<pinref part="C14" gate="B" pin="2"/>
+<pinref part="C15" gate="B" pin="2"/>
 <wire x1="50.8" y1="-185.42" x2="63.5" y2="-185.42" width="0.1524" layer="91"/>
 <junction x="63.5" y="-185.42"/>
-<pinref part="C14" gate="A" pin="2"/>
+<pinref part="C15" gate="A" pin="2"/>
 <wire x1="50.8" y1="-195.58" x2="63.5" y2="-195.58" width="0.1524" layer="91"/>
 <junction x="63.5" y="-195.58"/>
 </segment>
@@ -16051,11 +16097,6 @@ Source: RS Component / Phycomp</description>
 <wire x1="50.8" y1="-124.46" x2="45.72" y2="-124.46" width="0.1524" layer="91"/>
 <label x="45.72" y="-124.46" size="1.778" layer="95"/>
 <pinref part="H2" gate="G$1" pin="5"/>
-</segment>
-<segment>
-<pinref part="C14" gate="B" pin="1"/>
-<pinref part="A2" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="-185.42" x2="35.56" y2="-185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D3-INT1" class="0">
@@ -16212,11 +16253,6 @@ Source: RS Component / Phycomp</description>
 <label x="45.72" y="-114.3" size="1.778" layer="95"/>
 <pinref part="H2" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<pinref part="A0" gate="G$1" pin="2"/>
-<pinref part="C14" gate="D" pin="1"/>
-<wire x1="35.56" y1="-165.1" x2="45.72" y2="-165.1" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="A3" class="0">
 <segment>
@@ -16228,11 +16264,6 @@ Source: RS Component / Phycomp</description>
 <wire x1="50.8" y1="-129.54" x2="45.72" y2="-129.54" width="0.1524" layer="91"/>
 <label x="45.72" y="-129.54" size="1.778" layer="95"/>
 <pinref part="H2" gate="G$1" pin="7"/>
-</segment>
-<segment>
-<pinref part="A3" gate="G$1" pin="2"/>
-<pinref part="C14" gate="A" pin="1"/>
-<wire x1="35.56" y1="-195.58" x2="45.72" y2="-195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D5_MANUAL_LOG" class="0">
@@ -16316,11 +16347,6 @@ Source: RS Component / Phycomp</description>
 <label x="45.72" y="-119.38" size="1.778" layer="95"/>
 <pinref part="H2" gate="G$1" pin="3"/>
 </segment>
-<segment>
-<pinref part="A1" gate="G$1" pin="2"/>
-<pinref part="C14" gate="C" pin="1"/>
-<wire x1="35.56" y1="-175.26" x2="45.72" y2="-175.26" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="CS-SD" class="0">
 <segment>
@@ -16401,6 +16427,34 @@ Source: RS Component / Phycomp</description>
 <wire x1="53.34" y1="-58.42" x2="63.5" y2="-58.42" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="D8"/>
 <label x="53.34" y="-58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="A0" gate="G$1" pin="2"/>
+<pinref part="C15" gate="D" pin="1"/>
+<wire x1="35.56" y1="-165.1" x2="45.72" y2="-165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="A1" gate="G$1" pin="2"/>
+<pinref part="C15" gate="C" pin="1"/>
+<wire x1="35.56" y1="-175.26" x2="45.72" y2="-175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="A2" gate="G$1" pin="2"/>
+<pinref part="C15" gate="B" pin="1"/>
+<wire x1="35.56" y1="-185.42" x2="45.72" y2="-185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="C15" gate="A" pin="1"/>
+<pinref part="A3" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="-195.58" x2="35.56" y2="-195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
