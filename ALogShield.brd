@@ -165,8 +165,8 @@
 <wire x1="49.72" y1="0" x2="53.34" y2="3.62" width="0" layer="20" curve="90"/>
 <wire x1="53.34" y1="3.62" x2="53.34" y2="74.7166" width="0" layer="20"/>
 <text x="4.445" y="70.358" size="1.27" layer="21" rot="R270">GND</text>
-<text x="35.687" y="40.0685" size="0.8128" layer="21">ALog-Shield v2.0.0b
-25 Jan 2017
+<text x="35.687" y="40.0685" size="0.8128" layer="21">ALog-Shield v2.1.0a
+21 March 2017
 Andy Wickert and
 Chad Sandell
 Northern Widget LLC and
@@ -1419,7 +1419,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$9" library="awickert" package="ARDUINO_SHIELD_PINS_ONLY" value="ARDUINO_SHIELD_PIN_PURPOSE" x="-6.6675" y="64.516" rot="R270"/>
+<element name="U$9" library="awickert" package="ARDUINO_SHIELD_PINS_ONLY" value="ARDUINO_SHIELD_PIN_PURPOSE" x="-6.6675" y="64.516" smashed="yes" rot="R270"/>
 <element name="LSHIFT1" library="40xx" package="SO16" value="4050D" x="34.29" y="52.705" rot="R180"/>
 <element name="SD1" library="adafruit" package="06132" value="SDMMC06132" x="27.94" y="34.163" rot="R90"/>
 <element name="CLOCK_BATT1" library="SparkFun" package="BATTCON_12MM_PTH" value="3V Backup Battery" x="6.35" y="48.641" rot="R90"/>
