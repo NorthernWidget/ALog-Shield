@@ -12944,6 +12944,13 @@ Source: RS Component / Phycomp</description>
 <wire x1="154.94" y1="-66.04" x2="162.56" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="-66.04" x2="162.56" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="VCC" pin="VCC"/>
+<wire x1="124.46" y1="-66.04" x2="137.16" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="IOREF"/>
+<label x="129.54" y="-66.04" size="1.778" layer="95"/>
+<wire x1="137.16" y1="-66.04" x2="137.16" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-71.12" x2="154.94" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-71.12" x2="154.94" y2="-66.04" width="0.1524" layer="91"/>
+<junction x="154.94" y="-66.04"/>
 </segment>
 <segment>
 <wire x1="124.46" y1="-50.8" x2="142.24" y2="-50.8" width="0.1524" layer="91"/>
@@ -13051,14 +13058,9 @@ Source: RS Component / Phycomp</description>
 <pinref part="SUPPLY39" gate="GND" pin="GND"/>
 </segment>
 <segment>
+<pinref part="SUPPLY40" gate="GND" pin="GND"/>
 <wire x1="124.46" y1="-68.58" x2="134.62" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="NC"/>
-<pinref part="SUPPLY40" gate="GND" pin="GND"/>
-<wire x1="124.46" y1="-66.04" x2="134.62" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="IOREF"/>
-<label x="129.54" y="-66.04" size="1.778" layer="95"/>
-<wire x1="134.62" y1="-66.04" x2="134.62" y2="-68.58" width="0.1524" layer="91"/>
-<junction x="134.62" y="-68.58"/>
 </segment>
 <segment>
 <pinref part="LSHIFT1" gate="P" pin="VSS"/>
