@@ -12891,8 +12891,13 @@ Source: RS Component / Phycomp</description>
 <attribute name="SHEET" x="363.22" y="-504.19" size="2.54" layer="94" display="off"/>
 <attribute name="DRAWING_NAME" x="294.64" y="-486.41" size="2.54" layer="94"/>
 </instance>
+<<<<<<< HEAD
 <instance part="+3V15" gate="G$1" x="299.72" y="-38.1" rot="R90"/>
 <instance part="SD_3V4" gate="G$1" x="314.96" y="-38.1" rot="R270"/>
+=======
+<instance part="+3V15" gate="G$1" x="271.78" y="-22.86" rot="R90"/>
+<instance part="SD_3V4" gate="G$1" x="284.48" y="-22.86" rot="R270"/>
+>>>>>>> 6d33003b7ebe7ae5411e8a9a0469f4d4a00e5e6c
 <instance part="SD_3V5" gate="G$1" x="254" y="-289.56"/>
 <instance part="SD_3V6" gate="G$1" x="307.34" y="-276.86"/>
 <instance part="+3V16" gate="G$1" x="20.32" y="-129.54"/>
@@ -13293,8 +13298,13 @@ Source: RS Component / Phycomp</description>
 </segment>
 <segment>
 <pinref part="SD_3V4" gate="G$1" pin="VDD"/>
+<<<<<<< HEAD
 <wire x1="302.26" y1="-38.1" x2="312.42" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="+3V15" gate="G$1" pin="+3V3"/>
+=======
+<pinref part="+3V15" gate="G$1" pin="+3V3"/>
+<wire x1="281.94" y1="-22.86" x2="274.32" y2="-22.86" width="0.1524" layer="91"/>
+>>>>>>> 6d33003b7ebe7ae5411e8a9a0469f4d4a00e5e6c
 </segment>
 </net>
 <net name="SCL" class="0">
