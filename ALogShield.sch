@@ -12970,20 +12970,14 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="129.54" y="-10.16" size="1.778" layer="97">MICROCONTROLLER, SHIELD LAYOUT,
 &amp; INDICATOR LED</text>
 <text x="132.08" y="-104.14" size="1.778" layer="97">USER IO &amp; REFERENCE RESISTORS</text>
-<text x="88.9" y="-223.52" size="5.08" layer="97">ALOG</text>
-<wire x1="193.04" y1="-83.82" x2="378.46" y2="-83.82" width="0.1524" layer="97" style="dashdot"/>
-<text x="342.9" y="-91.44" size="1.778" layer="97">REAL TIME CLOCK</text>
-<wire x1="193.04" y1="-60.96" x2="378.46" y2="-60.96" width="0.1524" layer="97" style="dashdot"/>
-<text x="330.2" y="-7.62" size="1.778" layer="97">SD CARD AND LEVEL SHIFTER</text>
-<text x="322.58" y="-68.58" size="1.778" layer="97">POWER: SIMPLY USE ARDUINO 3V3</text>
-<text x="173.736" y="-242.57" size="3.81" layer="97">2.0</text>
-<text x="171.196" y="-247.65" size="2.54" layer="97">1/4</text>
-<text x="366.776" y="-243.078" size="3.81" layer="97">2.0</text>
-<text x="283.21" y="-222.504" size="5.08" layer="97">ALOG</text>
-<text x="363.982" y="-247.904" size="2.54" layer="97">2/4</text>
+<text x="173.736" y="-242.57" size="2.54" layer="97">2.2.0a</text>
+<text x="171.196" y="-247.65" size="2.54" layer="97">1/2</text>
 <text x="132.08" y="-121.92" size="1.778" layer="97">Unused:
 D4-SENSE-LDO-SWITCH
 D7-CLOCK_SD_SWITCH</text>
+<text x="152.4" y="-220.98" size="1.778" layer="97">Andrew Wickert
+Chad Sandell</text>
+<text x="90.17" y="-222.504" size="5.08" layer="97">ALOG</text>
 </plain>
 <instances>
 <instance part="U$9" gate="G$1" x="91.44" y="-45.72" rot="R90"/>
@@ -12994,32 +12988,10 @@ D7-CLOCK_SD_SWITCH</text>
 <instance part="P+6" gate="VCC" x="142.24" y="-45.72"/>
 <instance part="SUPPLY40" gate="GND" x="134.62" y="-71.12"/>
 <instance part="+3V5" gate="G$1" x="152.4" y="-60.96"/>
-<instance part="LSHIFT1" gate="A" x="231.14" y="-33.02"/>
-<instance part="LSHIFT1" gate="B" x="231.14" y="-22.86"/>
-<instance part="LSHIFT1" gate="C" x="231.14" y="-43.18"/>
-<instance part="LSHIFT1" gate="D" x="350.52" y="-48.26"/>
-<instance part="LSHIFT1" gate="E" x="307.34" y="-33.02" smashed="yes">
-<attribute name="NAME" x="312.42" y="-29.845" size="1.778" layer="95"/>
-<attribute name="VALUE" x="309.88" y="-38.1" size="1.778" layer="96"/>
-</instance>
-<instance part="LSHIFT1" gate="F" x="350.52" y="-33.02"/>
-<instance part="LSHIFT1" gate="P" x="307.34" y="-33.02" smashed="yes">
-<attribute name="NAME" x="303.53" y="-10.795" size="1.778" layer="95"/>
-</instance>
-<instance part="SUPPLY7" gate="GND" x="259.08" y="-53.34"/>
-<instance part="SUPPLY10" gate="GND" x="307.34" y="-43.18" smashed="yes">
-<attribute name="VALUE" x="305.435" y="-46.355" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY12" gate="GND" x="297.18" y="-35.56"/>
-<instance part="SUPPLY26" gate="GND" x="340.36" y="-35.56"/>
-<instance part="SD1" gate="G$1" x="271.78" y="-30.48"/>
 <instance part="SUPPLY31" gate="GND" x="157.48" y="-195.58"/>
 <instance part="A0" gate="G$1" x="30.48" y="-165.1"/>
 <instance part="A2" gate="G$1" x="30.48" y="-185.42"/>
 <instance part="A3" gate="G$1" x="30.48" y="-195.58"/>
-<instance part="SUPPLY34" gate="GND" x="337.82" y="-50.8"/>
-<instance part="SUPPLY36" gate="GND" x="287.02" y="-142.24"/>
-<instance part="SUPPLY41" gate="GND" x="251.46" y="-15.24"/>
 <instance part="SUPPLY42" gate="GND" x="20.32" y="-198.12"/>
 <instance part="SUPPLY43" gate="GND" x="20.32" y="-187.96"/>
 <instance part="SUPPLY44" gate="GND" x="20.32" y="-167.64"/>
@@ -13027,42 +12999,20 @@ D7-CLOCK_SD_SWITCH</text>
 <instance part="LED1" gate="G$1" x="30.48" y="-58.42" rot="R270"/>
 <instance part="SUPPLY45" gate="GND" x="20.32" y="-60.96"/>
 <instance part="R_LED1" gate="G$1" x="40.64" y="-58.42" rot="R180"/>
-<instance part="U$1" gate="G$1" x="215.9" y="-185.42"/>
 <instance part="+3V13" gate="G$1" x="35.56" y="-119.38"/>
 <instance part="A1" gate="G$1" x="30.48" y="-175.26"/>
 <instance part="SUPPLY47" gate="GND" x="20.32" y="-177.8"/>
-<instance part="U$4" gate="G$1" x="215.9" y="-182.88"/>
-<instance part="LOGO2" gate="G$1" x="254" y="-182.88"/>
 <instance part="SUPPLY52" gate="GND" x="109.22" y="-200.66"/>
 <instance part="RESET" gate="G$1" x="157.48" y="-182.88" rot="R90"/>
 <instance part="SUPPLY53" gate="GND" x="63.5" y="-208.28"/>
-<instance part="CLOCK_BATT_DECOUP" gate="G$1" x="292.1" y="-119.38" smashed="yes">
-<attribute name="VALUE" x="293.624" y="-124.079" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY56" gate="GND" x="330.2" y="-142.24"/>
 <instance part="D2" gate="G$1" x="109.22" y="-160.02" rot="R180"/>
 <instance part="LOG" gate="G$1" x="109.22" y="-177.8" rot="R90"/>
-<instance part="CLOCK_BATT_DECOUPLE" gate="G$1" x="302.26" y="-119.38" smashed="yes">
-<attribute name="NAME" x="288.036" y="-133.985" size="1.778" layer="95"/>
-<attribute name="VALUE" x="303.276" y="-123.571" size="1.778" layer="96"/>
-</instance>
-<instance part="U1" gate="A" x="213.36" y="-111.76"/>
 <instance part="FRAME1" gate="G$1" x="0" y="-248.92"/>
 <instance part="FRAME1" gate="G$2" x="83.82" y="-248.92" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="96.52" y="-247.65" size="2.54" layer="94"/>
 <attribute name="SHEET" x="170.18" y="-247.65" size="2.54" layer="94" display="off"/>
 <attribute name="DRAWING_NAME" x="101.6" y="-229.87" size="2.54" layer="94"/>
 </instance>
-<instance part="FRAME3" gate="G$1" x="193.04" y="-248.92"/>
-<instance part="FRAME3" gate="G$2" x="276.86" y="-248.92" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="289.56" y="-247.65" size="2.54" layer="94"/>
-<attribute name="SHEET" x="363.22" y="-247.65" size="2.54" layer="94" display="off"/>
-<attribute name="DRAWING_NAME" x="294.64" y="-229.87" size="2.54" layer="94"/>
-</instance>
-<instance part="+3V15" gate="G$1" x="269.24" y="-73.66" rot="R90"/>
-<instance part="SD_3V4" gate="G$1" x="284.48" y="-73.66" rot="R270"/>
-<instance part="SD_3V5" gate="G$1" x="254" y="-33.02"/>
-<instance part="SD_3V6" gate="G$1" x="307.34" y="-20.32"/>
 <instance part="+3V16" gate="G$1" x="20.32" y="-129.54"/>
 <instance part="+3V4" gate="G$1" x="27.94" y="-124.46"/>
 <instance part="H2" gate="G$1" x="55.88" y="-121.92" rot="R180"/>
@@ -13070,35 +13020,15 @@ D7-CLOCK_SD_SWITCH</text>
 <instance part="P+2" gate="VCC" x="12.7" y="-132.08"/>
 <instance part="SUPPLY1" gate="GND" x="20.32" y="-139.7"/>
 <instance part="P+3" gate="VCC" x="86.36" y="-121.92"/>
-<instance part="P+5" gate="VCC" x="317.5" y="-96.52"/>
-<instance part="P+7" gate="VCC" x="307.34" y="-93.98"/>
-<instance part="P+9" gate="VCC" x="205.74" y="-109.22"/>
 <instance part="H4" gate="G$1" x="109.22" y="-121.92" rot="R180"/>
 <instance part="SUPPLY2" gate="GND" x="78.74" y="-116.84"/>
 <instance part="+3V1" gate="G$1" x="81.28" y="-129.54"/>
 <instance part="SUPPLY3" gate="GND" x="73.66" y="-137.16"/>
 <instance part="J2" gate="G$1" x="109.22" y="-137.16" rot="R180"/>
-<instance part="I2C_PU_" gate="A" x="226.06" y="-139.7" smashed="yes">
-<attribute name="VALUE" x="223.52" y="-137.668" size="1.778" layer="96"/>
-<attribute name="NAME" x="223.52" y="-145.288" size="1.778" layer="95"/>
-</instance>
-<instance part="I2C_PU_" gate="B" x="226.06" y="-154.94" smashed="yes">
-<attribute name="VALUE" x="223.52" y="-152.908" size="1.778" layer="96"/>
-<attribute name="NAME" x="223.52" y="-160.528" size="1.778" layer="95"/>
-</instance>
-<instance part="I2C_PU_" gate="C" x="307.34" y="-106.68" smashed="yes" rot="R90">
-<attribute name="VALUE" x="305.308" y="-109.22" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="310.388" y="-109.22" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="I2C_PU_" gate="D" x="317.5" y="-109.22" smashed="yes" rot="R90">
-<attribute name="VALUE" x="315.468" y="-109.22" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="320.548" y="-111.76" size="1.778" layer="95" rot="R90"/>
-</instance>
 <instance part="C15" gate="A" x="48.26" y="-195.58"/>
 <instance part="C15" gate="B" x="48.26" y="-185.42"/>
 <instance part="C15" gate="C" x="48.26" y="-175.26"/>
 <instance part="C15" gate="D" x="48.26" y="-165.1"/>
-<instance part="CLOCK_BATT" gate="G$1" x="330.2" y="-127" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -13137,33 +13067,12 @@ D7-CLOCK_SD_SWITCH</text>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
-<segment>
-<wire x1="317.5" y1="-99.06" x2="317.5" y2="-104.14" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
-<pinref part="I2C_PU_" gate="D" pin="2"/>
-</segment>
-<segment>
-<wire x1="307.34" y1="-96.52" x2="307.34" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="P+7" gate="VCC" pin="VCC"/>
-<pinref part="I2C_PU_" gate="C" pin="2"/>
-</segment>
-<segment>
-<wire x1="213.36" y1="-114.3" x2="205.74" y2="-114.3" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="VCC"/>
-<wire x1="205.74" y1="-114.3" x2="205.74" y2="-111.76" width="0.1524" layer="91"/>
-<pinref part="P+9" gate="VCC" pin="VCC"/>
-</segment>
 </net>
 <net name="DI" class="0">
 <segment>
 <wire x1="53.34" y1="-66.04" x2="63.5" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="MOSI"/>
 <label x="53.34" y="-66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="220.98" y1="-22.86" x2="210.82" y2="-22.86" width="0.1524" layer="91"/>
-<label x="210.82" y="-22.86" size="1.778" layer="95"/>
-<pinref part="LSHIFT1" gate="B" pin="I"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="-121.92" x2="91.44" y2="-121.92" width="0.1524" layer="91"/>
@@ -13178,13 +13087,6 @@ D7-CLOCK_SD_SWITCH</text>
 <label x="53.34" y="-68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="-20.32" x2="241.3" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="-20.32" x2="241.3" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="-12.7" x2="241.3" y2="-12.7" width="0.1524" layer="91"/>
-<label x="210.82" y="-12.7" size="1.778" layer="95"/>
-<pinref part="SD1" gate="G$1" pin="DATA_OUT"/>
-</segment>
-<segment>
 <wire x1="104.14" y1="-119.38" x2="91.44" y2="-119.38" width="0.1524" layer="91"/>
 <label x="91.44" y="-119.38" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="3"/>
@@ -13195,11 +13097,6 @@ D7-CLOCK_SD_SWITCH</text>
 <wire x1="53.34" y1="-71.12" x2="63.5" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="SCK"/>
 <label x="53.34" y="-71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="220.98" y1="-33.02" x2="210.82" y2="-33.02" width="0.1524" layer="91"/>
-<label x="210.82" y="-33.02" size="1.778" layer="95"/>
-<pinref part="LSHIFT1" gate="A" pin="I"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="-116.84" x2="91.44" y2="-116.84" width="0.1524" layer="91"/>
@@ -13231,42 +13128,9 @@ D7-CLOCK_SD_SWITCH</text>
 <pinref part="U$9" gate="G$1" pin="NC"/>
 </segment>
 <segment>
-<pinref part="LSHIFT1" gate="P" pin="VSS"/>
-<pinref part="SUPPLY10" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LSHIFT1" gate="E" pin="I"/>
-<pinref part="SUPPLY12" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LSHIFT1" gate="F" pin="I"/>
-<pinref part="SUPPLY26" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<wire x1="259.08" y1="-50.8" x2="259.08" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="-48.26" x2="259.08" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="-43.18" x2="259.08" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="259.08" y="-48.26"/>
-<junction x="259.08" y="-43.18"/>
-<pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<pinref part="SD1" gate="G$1" pin="GND"/>
-<pinref part="SD1" gate="G$1" pin="VSS2"/>
-<pinref part="SD1" gate="G$1" pin="VSS1"/>
-</segment>
-<segment>
 <wire x1="157.48" y1="-187.96" x2="157.48" y2="-193.04" width="0.1524" layer="91"/>
 <pinref part="SUPPLY31" gate="GND" pin="GND"/>
 <pinref part="RESET" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<wire x1="337.82" y1="-48.26" x2="340.36" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="LSHIFT1" gate="D" pin="I"/>
-<pinref part="SUPPLY34" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<wire x1="259.08" y1="-12.7" x2="251.46" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="SD1" gate="G$1" pin="COMMON_SW"/>
-<pinref part="SUPPLY41" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="A3" gate="G$1" pin="1"/>
@@ -13315,26 +13179,6 @@ D7-CLOCK_SD_SWITCH</text>
 <pinref part="C15" gate="A" pin="2"/>
 <wire x1="50.8" y1="-195.58" x2="63.5" y2="-195.58" width="0.1524" layer="91"/>
 <junction x="63.5" y="-195.58"/>
-</segment>
-<segment>
-<pinref part="CLOCK_BATT_DECOUP" gate="G$1" pin="2"/>
-<pinref part="CLOCK_BATT_DECOUPLE" gate="G$1" pin="-"/>
-<wire x1="292.1" y1="-129.54" x2="292.1" y2="-124.46" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-124.46" x2="302.26" y2="-129.54" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-129.54" x2="292.1" y2="-129.54" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="-119.38" x2="287.02" y2="-129.54" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="-129.54" x2="287.02" y2="-139.7" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="-119.38" x2="284.48" y2="-119.38" width="0.1524" layer="91"/>
-<junction x="287.02" y="-129.54"/>
-<pinref part="SUPPLY36" gate="GND" pin="GND"/>
-<wire x1="292.1" y1="-129.54" x2="287.02" y2="-129.54" width="0.1524" layer="91"/>
-<junction x="292.1" y="-129.54"/>
-<pinref part="U1" gate="A" pin="GND"/>
-</segment>
-<segment>
-<pinref part="SUPPLY56" gate="GND" pin="GND"/>
-<wire x1="330.2" y1="-139.7" x2="330.2" y2="-134.62" width="0.1524" layer="91"/>
-<pinref part="CLOCK_BATT" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -13459,11 +13303,6 @@ D7-CLOCK_SD_SWITCH</text>
 <pinref part="H4" gate="G$1" pin="8"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
-<segment>
-<pinref part="SD_3V4" gate="G$1" pin="VDD"/>
-<pinref part="+3V15" gate="G$1" pin="+3V3"/>
-<wire x1="281.94" y1="-73.66" x2="271.78" y2="-73.66" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -13480,12 +13319,6 @@ D7-CLOCK_SD_SWITCH</text>
 <wire x1="50.8" y1="-142.24" x2="40.64" y2="-142.24" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="4"/>
 <label x="40.64" y="-142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="284.48" y1="-111.76" x2="307.34" y2="-111.76" width="0.1524" layer="91"/>
-<label x="292.1" y="-111.76" size="1.778" layer="95"/>
-<pinref part="U1" gate="A" pin="SCL"/>
-<pinref part="I2C_PU_" gate="C" pin="1"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -13504,12 +13337,6 @@ D7-CLOCK_SD_SWITCH</text>
 <pinref part="J1" gate="G$1" pin="3"/>
 <label x="40.64" y="-139.7" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="284.48" y1="-114.3" x2="317.5" y2="-114.3" width="0.1524" layer="91"/>
-<label x="292.1" y="-114.3" size="1.778" layer="95"/>
-<pinref part="U1" gate="A" pin="SDA"/>
-<pinref part="I2C_PU_" gate="D" pin="1"/>
-</segment>
 </net>
 <net name="INT0" class="0">
 <segment>
@@ -13518,29 +13345,9 @@ D7-CLOCK_SD_SWITCH</text>
 <label x="53.34" y="-40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="208.28" y="-116.84" size="1.778" layer="95"/>
-<wire x1="213.36" y1="-116.84" x2="208.28" y2="-116.84" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="*INT/SQW"/>
-</segment>
-<segment>
 <label x="116.84" y="-160.02" size="1.778" layer="95"/>
 <pinref part="D2" gate="G$1" pin="A1"/>
 <wire x1="114.3" y1="-160.02" x2="124.46" y2="-160.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="BAT" class="0">
-<segment>
-<wire x1="284.48" y1="-116.84" x2="292.1" y2="-116.84" width="0.1524" layer="91"/>
-<label x="287.02" y="-116.84" size="1.778" layer="95"/>
-<pinref part="CLOCK_BATT_DECOUP" gate="G$1" pin="1"/>
-<wire x1="292.1" y1="-116.84" x2="302.26" y2="-116.84" width="0.1524" layer="91"/>
-<junction x="292.1" y="-116.84"/>
-<pinref part="CLOCK_BATT_DECOUPLE" gate="G$1" pin="+"/>
-<wire x1="302.26" y1="-116.84" x2="330.2" y2="-116.84" width="0.1524" layer="91"/>
-<junction x="302.26" y="-116.84"/>
-<pinref part="U1" gate="A" pin="VBAT"/>
-<wire x1="330.2" y1="-116.84" x2="330.2" y2="-119.38" width="0.1524" layer="91"/>
-<pinref part="CLOCK_BATT" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -13591,46 +13398,6 @@ D7-CLOCK_SD_SWITCH</text>
 <pinref part="D2" gate="G$1" pin="A2"/>
 </segment>
 </net>
-<net name="SD_DI" class="0">
-<segment>
-<wire x1="241.3" y1="-22.86" x2="259.08" y2="-22.86" width="0.1524" layer="91"/>
-<label x="241.3" y="-22.86" size="1.778" layer="95"/>
-<pinref part="LSHIFT1" gate="B" pin="O"/>
-<pinref part="SD1" gate="G$1" pin="DATA_IN"/>
-</segment>
-</net>
-<net name="SD_CLK" class="0">
-<segment>
-<wire x1="241.3" y1="-33.02" x2="241.3" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="-25.4" x2="259.08" y2="-25.4" width="0.1524" layer="91"/>
-<label x="241.3" y="-25.4" size="1.778" layer="95"/>
-<pinref part="LSHIFT1" gate="A" pin="O"/>
-<pinref part="SD1" gate="G$1" pin="SCLK"/>
-</segment>
-</net>
-<net name="SD_CS" class="0">
-<segment>
-<wire x1="241.3" y1="-43.18" x2="243.84" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="-43.18" x2="243.84" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="-27.94" x2="259.08" y2="-27.94" width="0.1524" layer="91"/>
-<label x="243.84" y="-27.94" size="1.778" layer="95"/>
-<pinref part="LSHIFT1" gate="C" pin="O"/>
-<pinref part="SD1" gate="G$1" pin="CS"/>
-</segment>
-</net>
-<net name="VDD" class="0">
-<segment>
-<wire x1="254" y1="-38.1" x2="259.08" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="SD1" gate="G$1" pin="VDD"/>
-<pinref part="SD_3V5" gate="G$1" pin="VDD"/>
-<wire x1="254" y1="-38.1" x2="254" y2="-35.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LSHIFT1" gate="P" pin="VDD"/>
-<wire x1="307.34" y1="-25.4" x2="307.34" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="SD_3V6" gate="G$1" pin="VDD"/>
-</segment>
-</net>
 <net name="A1" class="0">
 <segment>
 <wire x1="124.46" y1="-43.18" x2="134.62" y2="-43.18" width="0.1524" layer="91"/>
@@ -13650,11 +13417,6 @@ D7-CLOCK_SD_SWITCH</text>
 </segment>
 </net>
 <net name="CS-SD" class="0">
-<segment>
-<wire x1="220.98" y1="-43.18" x2="210.82" y2="-43.18" width="0.1524" layer="91"/>
-<label x="210.82" y="-43.18" size="1.778" layer="95"/>
-<pinref part="LSHIFT1" gate="C" pin="I"/>
-</segment>
 <segment>
 <wire x1="53.34" y1="-63.5" x2="63.5" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="CS"/>
@@ -13719,6 +13481,282 @@ D7-CLOCK_SD_SWITCH</text>
 <wire x1="33.02" y1="-53.34" x2="63.5" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="D7"/>
 <label x="33.02" y="-53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<wire x1="0" y1="165.1" x2="185.42" y2="165.1" width="0.1524" layer="97" style="dashdot"/>
+<text x="149.86" y="157.48" size="1.778" layer="97">REAL TIME CLOCK</text>
+<wire x1="0" y1="187.96" x2="185.42" y2="187.96" width="0.1524" layer="97" style="dashdot"/>
+<text x="137.16" y="241.3" size="1.778" layer="97">SD CARD AND LEVEL SHIFTER</text>
+<text x="129.54" y="180.34" size="1.778" layer="97">POWER: SIMPLY USE ARDUINO 3V3</text>
+<text x="173.736" y="5.842" size="2.54" layer="97">2.2.0a</text>
+<text x="90.17" y="26.416" size="5.08" layer="97">ALOG</text>
+<text x="170.942" y="1.016" size="2.54" layer="97">2/2</text>
+<wire x1="0" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="97" style="dashdot"/>
+<text x="152.4" y="27.94" size="1.778" layer="97">Andrew Wickert
+Chad Sandell</text>
+<text x="10.16" y="68.58" size="1.778" layer="97">Released under the Creative Commons Attribution Share-Alike 3.0 License
+http://creativecommons.org/licenses/by-sa/3.0
+Design by: Andrew D. Wickert and Chad T. Sandell</text>
+</plain>
+<instances>
+<instance part="LSHIFT1" gate="A" x="38.1" y="215.9"/>
+<instance part="LSHIFT1" gate="B" x="38.1" y="226.06"/>
+<instance part="LSHIFT1" gate="C" x="38.1" y="205.74"/>
+<instance part="LSHIFT1" gate="D" x="157.48" y="200.66"/>
+<instance part="LSHIFT1" gate="E" x="114.3" y="215.9" smashed="yes">
+<attribute name="NAME" x="119.38" y="219.075" size="1.778" layer="95"/>
+<attribute name="VALUE" x="116.84" y="210.82" size="1.778" layer="96"/>
+</instance>
+<instance part="LSHIFT1" gate="F" x="157.48" y="215.9"/>
+<instance part="LSHIFT1" gate="P" x="114.3" y="215.9" smashed="yes">
+<attribute name="NAME" x="110.49" y="238.125" size="1.778" layer="95"/>
+</instance>
+<instance part="SUPPLY7" gate="GND" x="66.04" y="195.58"/>
+<instance part="SUPPLY10" gate="GND" x="114.3" y="205.74" smashed="yes">
+<attribute name="VALUE" x="112.395" y="202.565" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY12" gate="GND" x="104.14" y="213.36"/>
+<instance part="SUPPLY26" gate="GND" x="147.32" y="213.36"/>
+<instance part="SD1" gate="G$1" x="78.74" y="218.44"/>
+<instance part="SUPPLY34" gate="GND" x="144.78" y="198.12"/>
+<instance part="SUPPLY36" gate="GND" x="93.98" y="106.68"/>
+<instance part="SUPPLY41" gate="GND" x="58.42" y="233.68"/>
+<instance part="U$1" gate="G$1" x="127" y="53.34"/>
+<instance part="U$4" gate="G$1" x="127" y="55.88"/>
+<instance part="LOGO2" gate="G$1" x="165.1" y="60.96"/>
+<instance part="CLOCK_BATT_DECOUP" gate="G$1" x="99.06" y="129.54" smashed="yes">
+<attribute name="VALUE" x="100.584" y="124.841" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY56" gate="GND" x="137.16" y="106.68"/>
+<instance part="CLOCK_BATT_DECOUPLE" gate="G$1" x="109.22" y="129.54" smashed="yes">
+<attribute name="NAME" x="94.996" y="114.935" size="1.778" layer="95"/>
+<attribute name="VALUE" x="110.236" y="125.349" size="1.778" layer="96"/>
+</instance>
+<instance part="U1" gate="A" x="20.32" y="137.16"/>
+<instance part="FRAME3" gate="G$1" x="0" y="0"/>
+<instance part="FRAME3" gate="G$2" x="83.82" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="96.52" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="170.18" y="1.27" size="2.54" layer="94" display="off"/>
+<attribute name="DRAWING_NAME" x="101.6" y="19.05" size="2.54" layer="94"/>
+</instance>
+<instance part="+3V15" gate="G$1" x="76.2" y="175.26" rot="R90"/>
+<instance part="SD_3V4" gate="G$1" x="91.44" y="175.26" rot="R270"/>
+<instance part="SD_3V5" gate="G$1" x="60.96" y="215.9"/>
+<instance part="SD_3V6" gate="G$1" x="114.3" y="228.6"/>
+<instance part="P+5" gate="VCC" x="124.46" y="152.4"/>
+<instance part="P+7" gate="VCC" x="114.3" y="154.94"/>
+<instance part="P+9" gate="VCC" x="12.7" y="139.7"/>
+<instance part="I2C_PU_" gate="A" x="22.86" y="106.68" smashed="yes">
+<attribute name="VALUE" x="20.32" y="108.712" size="1.778" layer="96"/>
+<attribute name="NAME" x="20.32" y="101.092" size="1.778" layer="95"/>
+</instance>
+<instance part="I2C_PU_" gate="B" x="22.86" y="93.98" smashed="yes">
+<attribute name="VALUE" x="20.32" y="96.012" size="1.778" layer="96"/>
+<attribute name="NAME" x="20.32" y="88.392" size="1.778" layer="95"/>
+</instance>
+<instance part="I2C_PU_" gate="C" x="114.3" y="142.24" smashed="yes" rot="R90">
+<attribute name="VALUE" x="112.268" y="139.7" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="117.348" y="139.7" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="I2C_PU_" gate="D" x="124.46" y="139.7" smashed="yes" rot="R90">
+<attribute name="VALUE" x="122.428" y="139.7" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="127.508" y="137.16" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="CLOCK_BATT" gate="G$1" x="137.16" y="121.92" rot="R90"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="VCC" class="0">
+<segment>
+<wire x1="124.46" y1="149.86" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<pinref part="I2C_PU_" gate="D" pin="2"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="152.4" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+<pinref part="I2C_PU_" gate="C" pin="2"/>
+</segment>
+<segment>
+<wire x1="20.32" y1="134.62" x2="12.7" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VCC"/>
+<wire x1="12.7" y1="134.62" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="P+9" gate="VCC" pin="VCC"/>
+</segment>
+</net>
+<net name="DI" class="0">
+<segment>
+<wire x1="27.94" y1="226.06" x2="17.78" y2="226.06" width="0.1524" layer="91"/>
+<label x="17.78" y="226.06" size="1.778" layer="95"/>
+<pinref part="LSHIFT1" gate="B" pin="I"/>
+</segment>
+</net>
+<net name="DO" class="0">
+<segment>
+<wire x1="66.04" y1="228.6" x2="48.26" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="228.6" x2="48.26" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="236.22" x2="48.26" y2="236.22" width="0.1524" layer="91"/>
+<label x="17.78" y="236.22" size="1.778" layer="95"/>
+<pinref part="SD1" gate="G$1" pin="DATA_OUT"/>
+</segment>
+</net>
+<net name="CLK" class="0">
+<segment>
+<wire x1="27.94" y1="215.9" x2="17.78" y2="215.9" width="0.1524" layer="91"/>
+<label x="17.78" y="215.9" size="1.778" layer="95"/>
+<pinref part="LSHIFT1" gate="A" pin="I"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="LSHIFT1" gate="P" pin="VSS"/>
+<pinref part="SUPPLY10" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LSHIFT1" gate="E" pin="I"/>
+<pinref part="SUPPLY12" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LSHIFT1" gate="F" pin="I"/>
+<pinref part="SUPPLY26" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="198.12" x2="66.04" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="200.66" x2="66.04" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="205.74" x2="66.04" y2="208.28" width="0.1524" layer="91"/>
+<junction x="66.04" y="200.66"/>
+<junction x="66.04" y="205.74"/>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<pinref part="SD1" gate="G$1" pin="GND"/>
+<pinref part="SD1" gate="G$1" pin="VSS2"/>
+<pinref part="SD1" gate="G$1" pin="VSS1"/>
+</segment>
+<segment>
+<wire x1="144.78" y1="200.66" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="LSHIFT1" gate="D" pin="I"/>
+<pinref part="SUPPLY34" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="236.22" x2="58.42" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="SD1" gate="G$1" pin="COMMON_SW"/>
+<pinref part="SUPPLY41" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="CLOCK_BATT_DECOUP" gate="G$1" pin="2"/>
+<pinref part="CLOCK_BATT_DECOUPLE" gate="G$1" pin="-"/>
+<wire x1="99.06" y1="119.38" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="124.46" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="119.38" x2="99.06" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="129.54" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="119.38" x2="93.98" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="129.54" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
+<junction x="93.98" y="119.38"/>
+<pinref part="SUPPLY36" gate="GND" pin="GND"/>
+<wire x1="99.06" y1="119.38" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
+<junction x="99.06" y="119.38"/>
+<pinref part="U1" gate="A" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SUPPLY56" gate="GND" pin="GND"/>
+<wire x1="137.16" y1="109.22" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="CLOCK_BATT" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="SD_3V4" gate="G$1" pin="VDD"/>
+<pinref part="+3V15" gate="G$1" pin="+3V3"/>
+<wire x1="88.9" y1="175.26" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<wire x1="91.44" y1="137.16" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
+<label x="99.06" y="137.16" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="SCL"/>
+<pinref part="I2C_PU_" gate="C" pin="1"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<wire x1="91.44" y1="134.62" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
+<label x="99.06" y="134.62" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="SDA"/>
+<pinref part="I2C_PU_" gate="D" pin="1"/>
+</segment>
+</net>
+<net name="INT0" class="0">
+<segment>
+<label x="15.24" y="132.08" size="1.778" layer="95"/>
+<wire x1="20.32" y1="132.08" x2="15.24" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="*INT/SQW"/>
+</segment>
+</net>
+<net name="BAT" class="0">
+<segment>
+<wire x1="91.44" y1="132.08" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
+<label x="93.98" y="132.08" size="1.778" layer="95"/>
+<pinref part="CLOCK_BATT_DECOUP" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
+<junction x="99.06" y="132.08"/>
+<pinref part="CLOCK_BATT_DECOUPLE" gate="G$1" pin="+"/>
+<wire x1="109.22" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
+<junction x="109.22" y="132.08"/>
+<pinref part="U1" gate="A" pin="VBAT"/>
+<wire x1="137.16" y1="132.08" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="CLOCK_BATT" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="SD_DI" class="0">
+<segment>
+<wire x1="48.26" y1="226.06" x2="66.04" y2="226.06" width="0.1524" layer="91"/>
+<label x="48.26" y="226.06" size="1.778" layer="95"/>
+<pinref part="LSHIFT1" gate="B" pin="O"/>
+<pinref part="SD1" gate="G$1" pin="DATA_IN"/>
+</segment>
+</net>
+<net name="SD_CLK" class="0">
+<segment>
+<wire x1="48.26" y1="215.9" x2="48.26" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="223.52" x2="66.04" y2="223.52" width="0.1524" layer="91"/>
+<label x="48.26" y="223.52" size="1.778" layer="95"/>
+<pinref part="LSHIFT1" gate="A" pin="O"/>
+<pinref part="SD1" gate="G$1" pin="SCLK"/>
+</segment>
+</net>
+<net name="SD_CS" class="0">
+<segment>
+<wire x1="48.26" y1="205.74" x2="50.8" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="205.74" x2="50.8" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="220.98" x2="66.04" y2="220.98" width="0.1524" layer="91"/>
+<label x="50.8" y="220.98" size="1.778" layer="95"/>
+<pinref part="LSHIFT1" gate="C" pin="O"/>
+<pinref part="SD1" gate="G$1" pin="CS"/>
+</segment>
+</net>
+<net name="VDD" class="0">
+<segment>
+<wire x1="60.96" y1="210.82" x2="66.04" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="SD1" gate="G$1" pin="VDD"/>
+<pinref part="SD_3V5" gate="G$1" pin="VDD"/>
+<wire x1="60.96" y1="210.82" x2="60.96" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LSHIFT1" gate="P" pin="VDD"/>
+<wire x1="114.3" y1="223.52" x2="114.3" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="SD_3V6" gate="G$1" pin="VDD"/>
+</segment>
+</net>
+<net name="CS-SD" class="0">
+<segment>
+<wire x1="27.94" y1="205.74" x2="17.78" y2="205.74" width="0.1524" layer="91"/>
+<label x="17.78" y="205.74" size="1.778" layer="95"/>
+<pinref part="LSHIFT1" gate="C" pin="I"/>
 </segment>
 </net>
 </nets>
