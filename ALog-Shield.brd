@@ -165,14 +165,13 @@
 <wire x1="49.72" y1="0" x2="53.34" y2="3.62" width="0" layer="20" curve="90"/>
 <wire x1="53.34" y1="3.62" x2="53.34" y2="74.7166" width="0" layer="20"/>
 <text x="4.445" y="70.358" size="1.27" layer="21" rot="R270">GND</text>
-<text x="35.687" y="40.0685" size="0.8128" layer="21">ALog-Shield v2.2.0a
+<text x="18.923" y="5.2705" size="0.8128" layer="22" rot="MR0">ALog-Shield v2.2.0
 06 June 2017
 Andy Wickert and
 Chad Sandell
 Northern Widget LLC and
 University of Minnesota</text>
 <text x="5.715" y="7.874" size="1.27" layer="21" rot="R90">A0</text>
-<text x="21.601" y="32.1275" size="0.6096" layer="21">TM</text>
 <text x="12.715" y="7.874" size="1.27" layer="21" rot="R90">A1</text>
 <text x="9.215" y="7.874" size="1.27" layer="21" rot="R90">3V3</text>
 <text x="16.215" y="7.874" size="1.27" layer="21" rot="R90">3V3</text>
@@ -200,8 +199,14 @@ University of Minnesota</text>
 <text x="1.27" y="28.321" size="1.27" layer="21">A2</text>
 <text x="1.27" y="25.781" size="1.27" layer="21">A3</text>
 <text x="12.831" y="15.24" size="1.016" layer="21" rot="R90">GND</text>
-<text x="23.6855" y="35.433" size="0.8128" layer="21" rot="R90">ALog-Shield v2.2.0a</text>
-<text x="2.794" y="22.733" size="1.27" layer="21">Reference Resistors</text>
+<text x="23.6855" y="35.433" size="0.8128" layer="21" rot="R90">ALog-Shield v2.2.0</text>
+<text x="1.27" y="22.733" size="1.27" layer="21">Reference Resistors</text>
+<text x="37.211" y="39.8145" size="0.8128" layer="21">ALog-Shield v2.2.0
+06 June 2017
+Andy Wickert and
+Chad Sandell
+Northern Widget LLC and
+University of Minnesota</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -12870,43 +12875,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 &lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="OSHW-LOGO-M">
-<polygon width="0.0762" layer="21">
-<vertex x="0.6578" y="-1.588" curve="9.499253"/>
-<vertex x="0.9108" y="-1.4576"/>
-<vertex x="1.5392" y="-1.97"/>
-<vertex x="1.97" y="-1.5392"/>
-<vertex x="1.4576" y="-0.9108" curve="19.001165"/>
-<vertex x="1.6747" y="-0.3866"/>
-<vertex x="2.4814" y="-0.3047"/>
-<vertex x="2.4814" y="0.3047"/>
-<vertex x="1.6747" y="0.3866" curve="19.001165"/>
-<vertex x="1.4576" y="0.9108"/>
-<vertex x="1.97" y="1.5392"/>
-<vertex x="1.5392" y="1.97"/>
-<vertex x="0.9108" y="1.4576" curve="19.001165"/>
-<vertex x="0.3866" y="1.6747"/>
-<vertex x="0.3047" y="2.4814"/>
-<vertex x="-0.3047" y="2.4814"/>
-<vertex x="-0.3866" y="1.6747" curve="19.001165"/>
-<vertex x="-0.9108" y="1.4576"/>
-<vertex x="-1.5392" y="1.97"/>
-<vertex x="-1.97" y="1.5392"/>
-<vertex x="-1.4576" y="0.9108" curve="19.001165"/>
-<vertex x="-1.6747" y="0.3866"/>
-<vertex x="-2.4814" y="0.3047"/>
-<vertex x="-2.4814" y="-0.3047"/>
-<vertex x="-1.6747" y="-0.3866" curve="19.001165"/>
-<vertex x="-1.4576" y="-0.9108"/>
-<vertex x="-1.97" y="-1.5392"/>
-<vertex x="-1.5392" y="-1.97"/>
-<vertex x="-0.9108" y="-1.4576" curve="9.499253"/>
-<vertex x="-0.6578" y="-1.588"/>
-<vertex x="-0.299" y="-0.7218" curve="-67.507353"/>
-<vertex x="-0.7813" y="0" curve="-247.497552"/>
-<vertex x="0.299" y="-0.7218"/>
-</polygon>
-</package>
 <package name="OSHW-LOGO-L">
 <polygon width="0.15" layer="21">
 <vertex x="0.9209" y="-2.2231" curve="9.497479"/>
@@ -13482,7 +13450,6 @@ design rules under a new name.</description>
 <element name="LED1" library="SparkFun-LED" package="LED-1206" value="" x="46.609" y="56.007"/>
 <element name="R_LED1" library="resistor" package="R0603" value="220" x="42.037" y="56.007"/>
 <element name="A1" library="resistor" package="0207/10" value="" x="10.414" y="31.496"/>
-<element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="OSHW-LOGOM" x="17.272" y="39.751"/>
 <element name="RESET" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="Reset" x="49.784" y="7.62" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value=" SWCH-08441" x="218.694" y="-81.28" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="52.324" y="2.794" size="1.27" layer="21" ratio="10" rot="R180"/>
@@ -13520,9 +13487,9 @@ design rules under a new name.</description>
 </element>
 <element name="C15" library="rc-master-smd" package="CECJ-CTS-031817" value="10nF" x="10.414" y="30.226" rot="R90"/>
 <element name="CLOCK_BATT" library="awickert" package="LINX_BAT-HLD-012-SMT" value="Linx BAT-HLD-012-SMT" x="6.096" y="45.72" rot="R90"/>
-<element name="U$2" library="awickert" package="MADE_IN_MN_SHIELD_220" value="MADE_IN_MN_220_SHIELD" x="42.926" y="30.226" rot="R90"/>
-<element name="U$3" library="awickert" package="ALOG_LOG" value="ALOG_LOG" x="25.146" y="35.052" rot="R90"/>
-<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="OSHW-LOGOL" x="-4.064" y="-45.212"/>
+<element name="U$2" library="awickert" package="MADE_IN_MN_SHIELD_220" value="MADE_IN_MN_220_SHIELD" x="42.926" y="30.48" rot="R90"/>
+<element name="U$3" library="awickert" package="ALOG_LOG" value="ALOG_LOG" x="19.558" y="35.052" rot="R90"/>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-L" value="OSHW-LOGOL" x="4.826" y="16.764" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND">

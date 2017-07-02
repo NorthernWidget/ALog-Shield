@@ -25100,7 +25100,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="A1" library="resistor" deviceset="R-US_" device="0207/10"/>
 <part name="SUPPLY47" library="supply2" deviceset="GND" device=""/>
-<part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
 <part name="SUPPLY52" library="supply2" deviceset="GND" device=""/>
 <part name="RESET" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH" value="Reset"/>
 <part name="SUPPLY53" library="supply2" deviceset="GND" device=""/>
@@ -25703,7 +25702,6 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <instance part="SUPPLY34" gate="GND" x="144.78" y="198.12"/>
 <instance part="SUPPLY36" gate="GND" x="93.98" y="106.68"/>
 <instance part="SUPPLY41" gate="GND" x="58.42" y="233.68"/>
-<instance part="LOGO2" gate="G$1" x="165.1" y="60.96"/>
 <instance part="CLOCK_BATT_DECOUP" gate="G$1" x="99.06" y="129.54" smashed="yes">
 <attribute name="VALUE" x="100.584" y="124.841" size="1.778" layer="96"/>
 </instance>
