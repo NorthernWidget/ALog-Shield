@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="3.5" altunitdist="mm" altunit="mm"/>
@@ -156,14 +157,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="53.34" y1="74.7166" x2="49.5831" y2="78.4735" width="0" layer="20" curve="90"/>
-<wire x1="49.5831" y1="78.4735" x2="2.9214" y2="78.4735" width="0" layer="20"/>
-<wire x1="2.9214" y1="78.4735" x2="0.01" y2="75.5621" width="0" layer="20" curve="90"/>
-<wire x1="0.01" y1="75.5621" x2="0.01" y2="2.8475" width="0" layer="20"/>
-<wire x1="0.01" y1="2.8475" x2="2.8575" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="2.8575" y1="0" x2="49.72" y2="0" width="0" layer="20"/>
-<wire x1="49.72" y1="0" x2="53.34" y2="3.62" width="0" layer="20" curve="90"/>
-<wire x1="53.34" y1="3.62" x2="53.34" y2="74.7166" width="0" layer="20"/>
+<wire x1="53.34" y1="74.7166" x2="49.5831" y2="78.4735" width="0.1524" layer="20" curve="90"/>
+<wire x1="49.5831" y1="78.4735" x2="2.9214" y2="78.4735" width="0.1524" layer="20"/>
+<wire x1="2.9214" y1="78.4735" x2="0.01" y2="75.5621" width="0.1524" layer="20" curve="90"/>
+<wire x1="0.01" y1="75.5621" x2="0.01" y2="2.8475" width="0.1524" layer="20"/>
+<wire x1="0.01" y1="2.8475" x2="2.8575" y2="0" width="0.1524" layer="20" curve="90"/>
+<wire x1="2.8575" y1="0" x2="49.72" y2="0" width="0.1524" layer="20"/>
+<wire x1="49.72" y1="0" x2="53.34" y2="3.62" width="0.1524" layer="20" curve="90"/>
+<wire x1="53.34" y1="3.62" x2="53.34" y2="74.7166" width="0.1524" layer="20"/>
 <text x="4.445" y="70.358" size="1.27" layer="21" rot="R270">GND</text>
 <text x="18.923" y="5.2705" size="0.8128" layer="22" rot="MR0">ALog-Shield v2.2.0
 06 June 2017
@@ -13290,34 +13291,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="1" name="power" width="0.254" drill="0">
 </class>
 </classes>
-<designrules name="SparkFun *">
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="oshpark-2layer">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
+&lt;p&gt;
+Please make sure your boards conform to these design rules.</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
+<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="15mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="8mil"/>
-<param name="msDrill" value="12mil"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="13mil"/>
+<param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -13326,15 +13330,15 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="12mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="12mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="10mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="10mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -13347,11 +13351,11 @@ design rules under a new name.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="2.5mil"/>
+<param name="mlMaxStopFrame" value="2.5mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="25mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -13472,40 +13476,40 @@ design rules under a new name.</description>
 <element name="LED1" library="SparkFun-LED" package="LED-1206" value="" x="46.609" y="56.007"/>
 <element name="R_LED1" library="resistor" package="R0603" value="220" x="42.037" y="56.007"/>
 <element name="A1" library="resistor" package="0207/10" value="" x="10.414" y="31.496"/>
-<element name="RESET" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="Reset" x="49.784" y="7.62" smashed="yes" rot="R90">
-<attribute name="PROD_ID" value=" SWCH-08441" x="218.694" y="-81.28" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="52.324" y="2.794" size="1.27" layer="21" ratio="10" rot="R180"/>
+<element name="RESET" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="Reset" x="49.53" y="7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="52.07" y="2.794" size="1.27" layer="21" ratio="10" rot="R180"/>
+<attribute name="PROD_ID" value=" SWCH-08441" x="218.44" y="-81.28" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="CLOCK_BATT_DECOUP" library="rcl" package="C0603" value="0.1uF" x="22.606" y="51.943"/>
 <element name="D2" library="semicon-smd-ipc" package="SOT23C" value="BAT54" x="44.958" y="50.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="46.863" y="48.895" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="46.863" y="53.975" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="LOG" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="LOG" x="49.784" y="70.866" smashed="yes" rot="R270">
-<attribute name="PROD_ID" value=" SWCH-08441" x="-179.451" y="172.466" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="46.736" y="75.692" size="1.27" layer="21" ratio="10"/>
+<element name="LOG" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="LOG" x="49.53" y="71.12" smashed="yes" rot="R270">
+<attribute name="NAME" x="46.482" y="75.946" size="1.27" layer="21" ratio="10"/>
+<attribute name="PROD_ID" value=" SWCH-08441" x="-179.705" y="172.72" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="CLOCK_BATT_DECOUPLE" library="SparkFun-Passives" package="EIA3216" value="10uF" x="21.463" y="54.991" rot="R180"/>
 <element name="U1" library="Maxim-DS3231MZ_8-SOIC" package="21-0041B_8" value="DS3231MZ/V+T" x="16.764" y="48.895" rot="R90">
-<attribute name="VENDOR" value="Maxim" x="315.214" y="-26.035" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Maxim" x="315.214" y="-26.035" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="DS3231MZ/V+T" x="315.214" y="-26.035" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VENDOR" value="Maxim" x="315.214" y="-26.035" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="H2" library="SparkFun" package="SCREWTERMINAL-3.5MM-8" value="" x="5.08" y="3.81"/>
 <element name="J1" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-4" value="" x="33.08" y="3.81">
-<attribute name="SF_ID" value="2xPRT-08084" x="33.08" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="PROD_ID" value="2xCONN-08399" x="33.08" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="SF_ID" value="2xPRT-08084" x="33.08" y="3.81" size="1.778" layer="27" display="off"/>
 </element>
 <element name="H4" library="SparkFun" package="SCREWTERMINAL-3.5MM-8" value="" x="5.08" y="74.676"/>
 <element name="J2" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-4" value="" x="33.08" y="74.676">
-<attribute name="SF_ID" value="2xPRT-08084" x="33.08" y="74.676" size="1.778" layer="27" display="off"/>
 <attribute name="PROD_ID" value="2xCONN-08399" x="33.08" y="74.676" size="1.778" layer="27" display="off"/>
+<attribute name="SF_ID" value="2xPRT-08084" x="33.08" y="74.676" size="1.778" layer="27" display="off"/>
 </element>
 <element name="I2C_PU_" library="resistor-dil" package="0603-ARC" value="3.3K" x="14.478" y="54.356">
-<attribute name="MPN" value="" x="-3.556" y="32.512" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="-3.556" y="32.512" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="-3.556" y="32.512" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-3.556" y="32.512" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-3.556" y="32.512" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-3.556" y="32.512" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C15" library="rc-master-smd" package="CECJ-CTS-031817" value="10nF" x="10.414" y="30.226" rot="R90"/>
 <element name="CLOCK_BATT" library="awickert" package="LINX_BAT-HLD-012-SMT" value="Linx BAT-HLD-012-SMT" x="6.096" y="45.72" rot="R90"/>
@@ -13692,11 +13696,11 @@ design rules under a new name.</description>
 <signal name="RESET">
 <contactref element="U$9" pad="RES"/>
 <contactref element="RESET" pad="3"/>
-<wire x1="52.0192" y1="12.8016" x2="52.0192" y2="13.8176" width="0.2032" layer="1"/>
-<wire x1="50.8" y1="11.5824" x2="52.0192" y2="12.8016" width="0.2032" layer="1"/>
-<wire x1="50.8" y1="5.6896" x2="50.8" y2="11.5824" width="0.2032" layer="1"/>
-<wire x1="52.0192" y1="4.4704" x2="50.8" y2="5.6896" width="0.2032" layer="1"/>
-<wire x1="52.0192" y1="4.4704" x2="52.0446" y2="4.3688" width="0.2032" layer="1"/>
+<wire x1="52.0192" y1="13.0556" x2="52.0192" y2="13.8176" width="0.2032" layer="1"/>
+<wire x1="50.546" y1="11.5824" x2="52.0192" y2="13.0556" width="0.2032" layer="1"/>
+<wire x1="50.546" y1="5.9436" x2="50.546" y2="11.5824" width="0.2032" layer="1"/>
+<wire x1="52.0192" y1="4.4704" x2="50.546" y2="5.9436" width="0.2032" layer="1"/>
+<wire x1="52.0192" y1="4.4704" x2="51.7906" y2="4.3688" width="0.2032" layer="1"/>
 <wire x1="18.288" y1="13.6144" x2="17.4752" y2="13.6144" width="0.2032" layer="1"/>
 <wire x1="19.5072" y1="12.3952" x2="18.288" y2="13.6144" width="0.2032" layer="1"/>
 <wire x1="32.1056" y1="12.3952" x2="19.5072" y2="12.3952" width="0.2032" layer="1"/>
@@ -13807,9 +13811,9 @@ design rules under a new name.</description>
 <wire x1="5.08" y1="63.3984" x2="6.5024" y2="63.3984" width="0.2032" layer="1"/>
 <wire x1="3.6576" y1="61.976" x2="5.08" y2="63.3984" width="0.2032" layer="1"/>
 <wire x1="3.6576" y1="61.976" x2="3.4925" y2="61.976" width="0.2032" layer="1"/>
-<wire x1="47.752" y1="13.0048" x2="47.752" y2="13.6144" width="0.2032" layer="16"/>
-<wire x1="43.688" y1="8.9408" x2="47.752" y2="13.0048" width="0.2032" layer="16"/>
-<wire x1="43.688" y1="3.8608" x2="43.688" y2="8.9408" width="0.2032" layer="16"/>
+<wire x1="47.752" y1="13.2588" x2="47.752" y2="13.6144" width="0.2032" layer="16"/>
+<wire x1="43.688" y1="9.1948" x2="47.752" y2="13.2588" width="0.2032" layer="16"/>
+<wire x1="43.688" y1="3.8608" x2="43.688" y2="9.1948" width="0.2032" layer="16"/>
 <wire x1="47.752" y1="13.6144" x2="47.9425" y2="13.716" width="0.2032" layer="16"/>
 <wire x1="43.688" y1="3.8608" x2="43.58" y2="3.81" width="0.2032" layer="16"/>
 <wire x1="47.752" y1="20.9296" x2="47.752" y2="13.8176" width="0.2032" layer="16"/>
@@ -14017,9 +14021,9 @@ design rules under a new name.</description>
 <wire x1="15.4432" y1="31.496" x2="14.6304" y2="30.6832" width="0.2032" layer="1"/>
 <wire x1="11.3792" y1="30.6832" x2="11.214" y2="30.626" width="0.2032" layer="1"/>
 <wire x1="15.4432" y1="31.496" x2="15.494" y2="31.496" width="0.2032" layer="1"/>
-<wire x1="19.7104" y1="31.496" x2="15.494" y2="31.496" width="0.2032" layer="16"/>
-<wire x1="37.592" y1="13.6144" x2="19.7104" y2="31.496" width="0.2032" layer="16"/>
-<wire x1="37.592" y1="13.6144" x2="37.7825" y2="13.716" width="0.2032" layer="16"/>
+<wire x1="19.4564" y1="31.496" x2="15.494" y2="31.496" width="0.2032" layer="16"/>
+<wire x1="37.338" y1="13.6144" x2="19.4564" y2="31.496" width="0.2032" layer="16"/>
+<wire x1="37.338" y1="13.6144" x2="37.7825" y2="13.716" width="0.2032" layer="16"/>
 </signal>
 <signal name="CS-SD">
 <contactref element="LSHIFT1" pad="7"/>
@@ -14047,7 +14051,7 @@ design rules under a new name.</description>
 <wire x1="49.3776" y1="72.136" x2="49.3776" y2="53.6448" width="0.2032" layer="1"/>
 <wire x1="47.5488" y1="73.9648" x2="49.3776" y2="72.136" width="0.2032" layer="1"/>
 <wire x1="45.1104" y1="49.784" x2="44.958" y2="49.7" width="0.2032" layer="1"/>
-<wire x1="47.5488" y1="73.9648" x2="47.5234" y2="74.1172" width="0.2032" layer="1"/>
+<wire x1="47.5488" y1="73.9648" x2="47.2694" y2="74.3712" width="0.2032" layer="1"/>
 </signal>
 <signal name="D4">
 <contactref element="U$9" pad="D4"/>
@@ -14136,13 +14140,11 @@ design rules under a new name.</description>
 <approved hash="5,1,815c88df588293ca"/>
 <approved hash="1,20,7d9a027c04b47b52"/>
 <approved hash="1,20,63ece50ae50663e0"/>
-<approved hash="1,20,95e40202026a958c"/>
 <approved hash="1,20,53e47a0278b15157"/>
 <approved hash="1,20,53e07a0674945d72"/>
 <approved hash="1,20,7de40c020c9d7d7b"/>
 <approved hash="1,20,95e40202049a937c"/>
 <approved hash="1,20,70e41e021e99707f"/>
-<approved hash="1,20,6dec0a0a0bb56c53"/>
 <approved hash="1,20,67e40a0214b47952"/>
 <approved hash="1,20,8d1c03fa00b48e52"/>
 <approved hash="1,20,1cfd021b029a1c7c"/>
@@ -14150,7 +14152,6 @@ design rules under a new name.</description>
 <approved hash="1,20,03e40c020c9b037d"/>
 <approved hash="1,20,4dea030c03f44d12"/>
 <approved hash="1,20,5de47a027b9d5c7b"/>
-<approved hash="1,20,53e0fa06fa775391"/>
 <approved hash="1,20,70ec0e0a0cba725c"/>
 <approved hash="1,20,70f8061e07967170"/>
 <approved hash="1,20,50e07e067d855363"/>
@@ -14169,6 +14170,20 @@ design rules under a new name.</description>
 <approved hash="5,1,687114411d4d677d"/>
 <approved hash="5,1,9e0de01def119701"/>
 <approved hash="4,1,e64b3330e2f940e2"/>
+<approved hash="1,20,95e40202026a958c"/>
+<approved hash="1,20,70e40e0208ba765c"/>
+<approved hash="1,20,6dec0a0a0bb56c53"/>
+<approved hash="1,20,65e80b0e0bf56513"/>
+<approved hash="1,20,53e0fa06fa775391"/>
+<approved hash="1,20,5ce4020203965d70"/>
+<approved hash="1,20,911c3ffa3cbb925d"/>
+<approved hash="1,20,651ffbf9f8b9665f"/>
+<approved hash="1,20,60e0660669976f71"/>
+<approved hash="1,20,73e21d041d0473e2"/>
+<approved hash="1,20,70e00e060e99707f"/>
+<approved hash="1,20,51d80f3e30f56e13"/>
+<approved hash="1,20,65e7da01da7b659d"/>
+<approved hash="4,1,ebf0ca2b1caef80b"/>
 </errors>
 </board>
 </drawing>
