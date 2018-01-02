@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -67,6 +67,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -876,14 +878,6 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="VDD">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.905" x2="0" y2="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="VDD" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VCC" prefix="P+">
@@ -903,19 +897,6 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+3V3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VDD" prefix="VDD">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="VDD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5224,88 +5205,6 @@ Source: AVX .. aphvc.pdf</description>
 </library>
 <library name="awickert">
 <packages>
-<package name="ARDUINO_SHIELD_PINS_ONLY">
-<wire x1="1.27" y1="55.88" x2="3.81" y2="55.88" width="0.127" layer="51"/>
-<wire x1="3.81" y1="55.88" x2="3.81" y2="35.56" width="0.127" layer="51"/>
-<wire x1="3.81" y1="35.56" x2="1.27" y2="35.56" width="0.127" layer="51"/>
-<wire x1="1.27" y1="35.56" x2="1.27" y2="55.88" width="0.127" layer="51"/>
-<wire x1="1.27" y1="34.29" x2="3.81" y2="34.29" width="0.127" layer="51"/>
-<wire x1="3.81" y1="34.29" x2="3.81" y2="8.89" width="0.127" layer="51"/>
-<wire x1="3.81" y1="8.89" x2="1.27" y2="8.89" width="0.127" layer="51"/>
-<wire x1="1.27" y1="8.89" x2="1.27" y2="34.29" width="0.127" layer="51"/>
-<wire x1="49.53" y1="17.78" x2="52.07" y2="17.78" width="0.127" layer="51"/>
-<wire x1="52.07" y1="17.78" x2="52.07" y2="38.1" width="0.127" layer="51"/>
-<wire x1="52.07" y1="38.1" x2="49.53" y2="38.1" width="0.127" layer="51"/>
-<wire x1="49.53" y1="38.1" x2="49.53" y2="17.78" width="0.127" layer="51"/>
-<wire x1="52.07" y1="40.64" x2="49.53" y2="40.64" width="0.127" layer="51"/>
-<wire x1="49.53" y1="40.64" x2="49.53" y2="55.88" width="0.127" layer="51"/>
-<wire x1="49.53" y1="55.88" x2="52.07" y2="55.88" width="0.127" layer="51"/>
-<wire x1="52.07" y1="55.88" x2="52.07" y2="40.64" width="0.127" layer="51"/>
-<pad name="RES" x="50.8" y="24.13" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3.3V" x="50.8" y="26.67" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5V" x="50.8" y="29.21" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="GND@0" x="50.8" y="31.75" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="GND@1" x="50.8" y="34.29" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="VIN" x="50.8" y="36.83" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="A0" x="50.8" y="41.91" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="A1" x="50.8" y="44.45" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="A2" x="50.8" y="46.99" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="A3" x="50.8" y="49.53" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="A4" x="50.8" y="52.07" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="A5" x="50.8" y="54.61" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="RX" x="2.54" y="54.61" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="TX" x="2.54" y="52.07" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D2" x="2.54" y="49.53" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D3" x="2.54" y="46.99" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D4" x="2.54" y="44.45" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D5" x="2.54" y="41.91" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D6" x="2.54" y="39.37" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D7" x="2.54" y="36.83" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D8" x="2.54" y="33.02" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D9" x="2.54" y="30.48" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D10" x="2.54" y="27.94" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D11" x="2.54" y="25.4" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D12" x="2.54" y="22.86" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="D13" x="2.54" y="20.32" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="GND@2" x="2.54" y="17.78" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="AREF" x="2.54" y="15.24" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="49.4157" y="32.258" size="1.016" layer="21" ratio="15" rot="R180">GND</text>
-<text x="49.4157" y="34.798" size="1.016" layer="21" ratio="15" rot="R180">GND</text>
-<text x="49.4157" y="29.718" size="1.016" layer="21" ratio="15" rot="R180">+VCC</text>
-<text x="49.4157" y="24.638" size="1.016" layer="21" ratio="15" rot="R180">RST</text>
-<text x="49.4157" y="37.338" size="1.016" layer="21" ratio="15" rot="R180">+VCC</text>
-<text x="49.4157" y="27.178" size="1.016" layer="21" ratio="15" rot="R180">+3.3V</text>
-<text x="49.4157" y="42.418" size="1.016" layer="21" ratio="15" rot="R180">0</text>
-<text x="49.4157" y="44.958" size="1.016" layer="21" ratio="15" rot="R180">1</text>
-<text x="49.4157" y="47.498" size="1.016" layer="21" ratio="15" rot="R180">2</text>
-<text x="49.4157" y="50.038" size="1.016" layer="21" ratio="15" rot="R180">3</text>
-<text x="49.4157" y="52.578" size="1.016" layer="21" ratio="15" rot="R180">SDA</text>
-<text x="49.4157" y="55.118" size="1.016" layer="21" ratio="15" rot="R180">SCL</text>
-<text x="46.8757" y="50.927" size="1.016" layer="21" ratio="15" rot="R270">Analog In</text>
-<text x="3.81" y="17.272" size="1.016" layer="21" ratio="15">GND</text>
-<text x="3.81" y="19.812" size="1.016" layer="21" ratio="15">SCK</text>
-<text x="3.81" y="22.352" size="1.016" layer="21" ratio="15">MISO</text>
-<text x="3.81" y="24.892" size="1.016" layer="21" ratio="15">MOSI</text>
-<text x="3.81" y="14.732" size="1.016" layer="21" ratio="15">AREF</text>
-<text x="3.81" y="27.432" size="1.016" layer="21" ratio="15">CS</text>
-<text x="3.81" y="29.972" size="1.016" layer="21" ratio="15">9</text>
-<text x="3.81" y="32.512" size="1.016" layer="21" ratio="15">8</text>
-<text x="3.81" y="36.322" size="1.016" layer="21" ratio="15">7</text>
-<text x="3.81" y="38.862" size="1.016" layer="21" ratio="15">6</text>
-<text x="3.81" y="41.402" size="1.016" layer="21" ratio="15">5</text>
-<text x="3.81" y="43.942" size="1.016" layer="21" ratio="15">4</text>
-<text x="3.81" y="46.482" size="1.016" layer="21" ratio="15">INT</text>
-<text x="3.81" y="49.022" size="1.016" layer="21" ratio="15">INT</text>
-<text x="3.81" y="51.562" size="1.016" layer="21" ratio="15">TX</text>
-<text x="3.81" y="54.102" size="1.016" layer="21" ratio="15">RX</text>
-<pad name="SDA" x="2.54" y="12.7" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="SCL" x="2.54" y="10.16" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="3.81" y="12.192" size="1.016" layer="21" ratio="15">SDA</text>
-<text x="3.81" y="9.652" size="1.016" layer="21" ratio="15">SCL</text>
-<pad name="IOREF" x="50.8" y="21.59" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="NC" x="50.8" y="19.05" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="49.4157" y="22.098" size="1.016" layer="21" ratio="15" rot="R180">IOREF</text>
-</package>
 <package name="LINX_BAT-HLD-012-SMT">
 <smd name="POWER1" x="7.62" y="0" dx="2.54" dy="5.08" layer="1"/>
 <smd name="POWER0" x="-7.62" y="0" dx="2.54" dy="5.08" layer="1"/>
@@ -17699,54 +17598,6 @@ Source: AVX .. aphvc.pdf</description>
 <symbol name="ALOG_LOGO">
 <text x="-7.62" y="0" size="1.27" layer="94">ALog Logo on Board</text>
 </symbol>
-<symbol name="ARDUINO_PIN_FCN_FOR_ALOG">
-<wire x1="-43.18" y1="22.86" x2="-43.18" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="-43.18" y1="-27.94" x2="15.24" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-27.94" x2="15.24" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-25.4" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-20.32" x2="20.32" y2="5.08" width="0.254" layer="94"/>
-<wire x1="20.32" y1="5.08" x2="15.24" y2="10.16" width="0.254" layer="94"/>
-<wire x1="15.24" y1="10.16" x2="15.24" y2="20.32" width="0.254" layer="94"/>
-<wire x1="15.24" y1="20.32" x2="12.7" y2="22.86" width="0.254" layer="94"/>
-<wire x1="12.7" y1="22.86" x2="-43.18" y2="22.86" width="0.254" layer="94"/>
-<text x="-27.94" y="0" size="5.08" layer="94">ARDUINO</text>
-<text x="-40.64" y="-5.08" size="2.54" layer="94">Duemilanove</text>
-<text x="-17.78" y="-5.08" size="2.54" layer="94">Diecimila</text>
-<text x="0" y="-5.08" size="2.54" layer="94">UNO R1/R2</text>
-<pin name="RX" x="10.16" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="TX" x="7.62" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="INT0" x="5.08" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="INT1" x="2.54" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="D4" x="0" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="D5" x="-2.54" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="D6" x="-5.08" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="D7" x="-7.62" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="D8" x="-12.7" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="D9" x="-15.24" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="CS" x="-17.78" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="MOSI" x="-20.32" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="MISO" x="-22.86" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="SCK" x="-25.4" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="GND" x="-27.94" y="27.94" visible="pin" length="middle" direction="pwr" rot="R270"/>
-<pin name="AREF" x="-30.48" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="SCL" x="12.7" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="SDA" x="10.16" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="A3" x="7.62" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="A2" x="5.08" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="A1" x="2.54" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="A0" x="0" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="VIN" x="-5.08" y="-33.02" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND1" x="-7.62" y="-33.02" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND2" x="-10.16" y="-33.02" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<pin name="VCC" x="-12.7" y="-33.02" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<pin name="3V3_SWITCHED" x="-15.24" y="-33.02" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<pin name="/RESET" x="-17.78" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<text x="-40.64" y="-10.16" size="2.54" layer="94">Shield Layout for Pin Purposes (ALog)</text>
-<pin name="SDA1" x="-33.02" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="SCL1" x="-35.56" y="27.94" visible="pin" length="middle" rot="R270"/>
-<pin name="IOREF" x="-20.32" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="NC" x="-22.86" y="-33.02" visible="pin" length="middle" rot="R90"/>
-</symbol>
 <symbol name="BATTERY">
 <wire x1="-3.175" y1="0.635" x2="-3.175" y2="0" width="0.4064" layer="94"/>
 <wire x1="-5.08" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
@@ -17768,52 +17619,6 @@ Source: AVX .. aphvc.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ARDUINO_SHIELD_PIN_PURPOSE">
-<gates>
-<gate name="G$1" symbol="ARDUINO_PIN_FCN_FOR_ALOG" x="43.18" y="27.94"/>
-</gates>
-<devices>
-<device name="" package="ARDUINO_SHIELD_PINS_ONLY">
-<connects>
-<connect gate="G$1" pin="/RESET" pad="RES"/>
-<connect gate="G$1" pin="3V3_SWITCHED" pad="3.3V"/>
-<connect gate="G$1" pin="A0" pad="A0"/>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="AREF" pad="AREF"/>
-<connect gate="G$1" pin="CS" pad="D10"/>
-<connect gate="G$1" pin="D4" pad="D4"/>
-<connect gate="G$1" pin="D5" pad="D5"/>
-<connect gate="G$1" pin="D6" pad="D6"/>
-<connect gate="G$1" pin="D7" pad="D7"/>
-<connect gate="G$1" pin="D8" pad="D8"/>
-<connect gate="G$1" pin="D9" pad="D9"/>
-<connect gate="G$1" pin="GND" pad="GND@0"/>
-<connect gate="G$1" pin="GND1" pad="GND@1"/>
-<connect gate="G$1" pin="GND2" pad="GND@2"/>
-<connect gate="G$1" pin="INT0" pad="D2"/>
-<connect gate="G$1" pin="INT1" pad="D3"/>
-<connect gate="G$1" pin="IOREF" pad="IOREF"/>
-<connect gate="G$1" pin="MISO" pad="D12"/>
-<connect gate="G$1" pin="MOSI" pad="D11"/>
-<connect gate="G$1" pin="NC" pad="NC"/>
-<connect gate="G$1" pin="RX" pad="RX"/>
-<connect gate="G$1" pin="SCK" pad="D13"/>
-<connect gate="G$1" pin="SCL" pad="A5"/>
-<connect gate="G$1" pin="SCL1" pad="SCL"/>
-<connect gate="G$1" pin="SDA" pad="A4"/>
-<connect gate="G$1" pin="SDA1" pad="SDA"/>
-<connect gate="G$1" pin="TX" pad="TX"/>
-<connect gate="G$1" pin="VCC" pad="5V"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LINX-BAT-HLD-012-SMT-OTL">
 <gates>
 <gate name="G$1" symbol="BATTERY" x="0" y="0"/>
@@ -25694,6 +25499,192 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </deviceset>
 </devicesets>
 </library>
+<library name="ALog-Shield">
+<description>Generated from &lt;b&gt;ALog-Shield.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="AWICKERT_ARDUINO_SHIELD_PINS_ONLY">
+<wire x1="1.27" y1="55.88" x2="3.81" y2="55.88" width="0.127" layer="51"/>
+<wire x1="3.81" y1="55.88" x2="3.81" y2="35.56" width="0.127" layer="51"/>
+<wire x1="3.81" y1="35.56" x2="1.27" y2="35.56" width="0.127" layer="51"/>
+<wire x1="1.27" y1="35.56" x2="1.27" y2="55.88" width="0.127" layer="51"/>
+<wire x1="1.27" y1="34.29" x2="3.81" y2="34.29" width="0.127" layer="51"/>
+<wire x1="3.81" y1="34.29" x2="3.81" y2="8.89" width="0.127" layer="51"/>
+<wire x1="3.81" y1="8.89" x2="1.27" y2="8.89" width="0.127" layer="51"/>
+<wire x1="1.27" y1="8.89" x2="1.27" y2="34.29" width="0.127" layer="51"/>
+<wire x1="49.53" y1="17.78" x2="52.07" y2="17.78" width="0.127" layer="51"/>
+<wire x1="52.07" y1="17.78" x2="52.07" y2="38.1" width="0.127" layer="51"/>
+<wire x1="52.07" y1="38.1" x2="49.53" y2="38.1" width="0.127" layer="51"/>
+<wire x1="49.53" y1="38.1" x2="49.53" y2="17.78" width="0.127" layer="51"/>
+<wire x1="52.07" y1="40.64" x2="49.53" y2="40.64" width="0.127" layer="51"/>
+<wire x1="49.53" y1="40.64" x2="49.53" y2="55.88" width="0.127" layer="51"/>
+<wire x1="49.53" y1="55.88" x2="52.07" y2="55.88" width="0.127" layer="51"/>
+<wire x1="52.07" y1="55.88" x2="52.07" y2="40.64" width="0.127" layer="51"/>
+<pad name="3.3V" x="50.8" y="26.67" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="5V" x="50.8" y="29.21" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A0" x="50.8" y="41.91" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A1" x="50.8" y="44.45" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A2" x="50.8" y="46.99" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A3" x="50.8" y="49.53" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A4" x="50.8" y="52.07" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A5" x="50.8" y="54.61" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="AREF" x="2.54" y="15.24" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D2" x="2.54" y="49.53" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D3" x="2.54" y="46.99" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D4" x="2.54" y="44.45" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D5" x="2.54" y="41.91" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D6" x="2.54" y="39.37" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D7" x="2.54" y="36.83" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D8" x="2.54" y="33.02" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D9" x="2.54" y="30.48" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D10" x="2.54" y="27.94" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D11" x="2.54" y="25.4" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D12" x="2.54" y="22.86" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D13" x="2.54" y="20.32" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="GND@0" x="50.8" y="31.75" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="GND@1" x="50.8" y="34.29" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="GND@2" x="2.54" y="17.78" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="IOREF" x="50.8" y="21.59" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="NC" x="50.8" y="19.05" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="RES" x="50.8" y="24.13" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="RX" x="2.54" y="54.61" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="SCL" x="2.54" y="10.16" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="SDA" x="2.54" y="12.7" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="TX" x="2.54" y="52.07" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="VIN" x="50.8" y="36.83" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="49.4157" y="32.258" size="1.016" layer="21" ratio="15" rot="R180">GND</text>
+<text x="49.4157" y="34.798" size="1.016" layer="21" ratio="15" rot="R180">GND</text>
+<text x="49.4157" y="29.718" size="1.016" layer="21" ratio="15" rot="R180">5V</text>
+<text x="49.4157" y="24.638" size="1.016" layer="21" ratio="15" rot="R180">RST</text>
+<text x="49.4157" y="37.338" size="1.016" layer="21" ratio="15" rot="R180">Vin</text>
+<text x="49.4157" y="27.178" size="1.016" layer="21" ratio="15" rot="R180">3.3V</text>
+<text x="49.4157" y="42.418" size="1.016" layer="21" ratio="15" rot="R180">0</text>
+<text x="49.4157" y="44.958" size="1.016" layer="21" ratio="15" rot="R180">1</text>
+<text x="49.4157" y="47.498" size="1.016" layer="21" ratio="15" rot="R180">2</text>
+<text x="49.4157" y="50.038" size="1.016" layer="21" ratio="15" rot="R180">3</text>
+<text x="49.4157" y="52.578" size="1.016" layer="21" ratio="15" rot="R180">SDA</text>
+<text x="49.4157" y="55.118" size="1.016" layer="21" ratio="15" rot="R180">SCL</text>
+<text x="46.8757" y="50.927" size="1.016" layer="21" ratio="15" rot="R270">Analog In</text>
+<text x="3.81" y="17.272" size="1.016" layer="21" ratio="15">GND</text>
+<text x="3.81" y="19.812" size="1.016" layer="21" ratio="15">SCK</text>
+<text x="3.81" y="22.352" size="1.016" layer="21" ratio="15">MISO</text>
+<text x="3.81" y="24.892" size="1.016" layer="21" ratio="15">MOSI</text>
+<text x="3.81" y="14.732" size="1.016" layer="21" ratio="15">AREF</text>
+<text x="3.81" y="27.432" size="1.016" layer="21" ratio="15">CS</text>
+<text x="3.81" y="29.972" size="1.016" layer="21" ratio="15">9</text>
+<text x="3.81" y="32.512" size="1.016" layer="21" ratio="15">8</text>
+<text x="3.81" y="36.322" size="1.016" layer="21" ratio="15">7</text>
+<text x="3.81" y="38.862" size="1.016" layer="21" ratio="15">6</text>
+<text x="3.81" y="41.402" size="1.016" layer="21" ratio="15">5</text>
+<text x="3.81" y="43.942" size="1.016" layer="21" ratio="15">4</text>
+<text x="3.81" y="46.482" size="1.016" layer="21" ratio="15">INT</text>
+<text x="3.81" y="49.022" size="1.016" layer="21" ratio="15">INT</text>
+<text x="3.81" y="51.562" size="1.016" layer="21" ratio="15">TX</text>
+<text x="3.81" y="54.102" size="1.016" layer="21" ratio="15">RX</text>
+<text x="3.81" y="12.192" size="1.016" layer="21" ratio="15">SDA</text>
+<text x="3.81" y="9.652" size="1.016" layer="21" ratio="15">SCL</text>
+<text x="49.4157" y="22.098" size="1.016" layer="21" ratio="15" rot="R180">IOREF</text>
+</package>
+</packages>
+<symbols>
+<symbol name="AWICKERT_ARDUINO_PIN_FCN_FOR_ALOG">
+<wire x1="-43.18" y1="22.86" x2="-43.18" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-43.18" y1="-27.94" x2="15.24" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-27.94" x2="15.24" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-25.4" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-20.32" x2="20.32" y2="5.08" width="0.254" layer="94"/>
+<wire x1="20.32" y1="5.08" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="-43.18" y2="22.86" width="0.254" layer="94"/>
+<pin name="/RESET" x="-17.78" y="-33.02" visible="pin" length="middle" rot="R90"/>
+<pin name="3V3_SWITCHED" x="-15.24" y="-33.02" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="A0" x="0" y="-33.02" visible="pin" length="middle" rot="R90"/>
+<pin name="A1" x="2.54" y="-33.02" visible="pin" length="middle" rot="R90"/>
+<pin name="A2" x="5.08" y="-33.02" visible="pin" length="middle" rot="R90"/>
+<pin name="A3" x="7.62" y="-33.02" visible="pin" length="middle" rot="R90"/>
+<pin name="AREF" x="-30.48" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="CS" x="-17.78" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="D4" x="0" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="D5" x="-2.54" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="D6" x="-5.08" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="D7" x="-7.62" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="D8" x="-12.7" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="D9" x="-15.24" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="GND" x="-27.94" y="27.94" visible="pin" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND1" x="-7.62" y="-33.02" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND2" x="-10.16" y="-33.02" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="INT0" x="5.08" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="INT1" x="2.54" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="IOREF" x="-20.32" y="-33.02" visible="pin" length="middle" rot="R90"/>
+<pin name="MISO" x="-22.86" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="MOSI" x="-20.32" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="NC" x="-22.86" y="-33.02" visible="pin" length="middle" rot="R90"/>
+<pin name="RX" x="10.16" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="SCK" x="-25.4" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="SCL" x="12.7" y="-33.02" visible="pin" length="middle" rot="R90"/>
+<pin name="SCL1" x="-35.56" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="SDA" x="10.16" y="-33.02" visible="pin" length="middle" rot="R90"/>
+<pin name="SDA1" x="-33.02" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="TX" x="7.62" y="27.94" visible="pin" length="middle" rot="R270"/>
+<pin name="5V" x="-12.7" y="-33.02" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="VIN" x="-5.08" y="-33.02" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<text x="-27.94" y="0" size="5.08" layer="94">ARDUINO</text>
+<text x="-40.64" y="-5.08" size="2.54" layer="94">Duemilanove</text>
+<text x="-17.78" y="-5.08" size="2.54" layer="94">Diecimila</text>
+<text x="0" y="-5.08" size="2.54" layer="94">UNO R1/R2</text>
+<text x="-40.64" y="-10.16" size="2.54" layer="94">Shield Layout for Pin Purposes (ALog)</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AWICKERT_ARDUINO_SHIELD_PIN_PURPOSE">
+<gates>
+<gate name="G$1" symbol="AWICKERT_ARDUINO_PIN_FCN_FOR_ALOG" x="43.18" y="27.94"/>
+</gates>
+<devices>
+<device name="" package="AWICKERT_ARDUINO_SHIELD_PINS_ONLY">
+<connects>
+<connect gate="G$1" pin="/RESET" pad="RES"/>
+<connect gate="G$1" pin="3V3_SWITCHED" pad="3.3V"/>
+<connect gate="G$1" pin="5V" pad="5V"/>
+<connect gate="G$1" pin="A0" pad="A0"/>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="AREF" pad="AREF"/>
+<connect gate="G$1" pin="CS" pad="D10"/>
+<connect gate="G$1" pin="D4" pad="D4"/>
+<connect gate="G$1" pin="D5" pad="D5"/>
+<connect gate="G$1" pin="D6" pad="D6"/>
+<connect gate="G$1" pin="D7" pad="D7"/>
+<connect gate="G$1" pin="D8" pad="D8"/>
+<connect gate="G$1" pin="D9" pad="D9"/>
+<connect gate="G$1" pin="GND" pad="GND@0"/>
+<connect gate="G$1" pin="GND1" pad="GND@1"/>
+<connect gate="G$1" pin="GND2" pad="GND@2"/>
+<connect gate="G$1" pin="INT0" pad="D2"/>
+<connect gate="G$1" pin="INT1" pad="D3"/>
+<connect gate="G$1" pin="IOREF" pad="IOREF"/>
+<connect gate="G$1" pin="MISO" pad="D12"/>
+<connect gate="G$1" pin="MOSI" pad="D11"/>
+<connect gate="G$1" pin="NC" pad="NC"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="SCK" pad="D13"/>
+<connect gate="G$1" pin="SCL" pad="A5"/>
+<connect gate="G$1" pin="SCL1" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="A4"/>
+<connect gate="G$1" pin="SDA1" pad="SDA"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -25706,12 +25697,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </class>
 </classes>
 <parts>
-<part name="U$9" library="awickert" deviceset="ARDUINO_SHIELD_PIN_PURPOSE" device=""/>
+<part name="U$9" library="ALog-Shield" deviceset="AWICKERT_ARDUINO_SHIELD_PIN_PURPOSE" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY38" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY39" library="supply2" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
-<part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY40" library="supply2" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="LSHIFT1" library="40xx" deviceset="4050" device="D"/>
@@ -25748,10 +25738,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="U1" library="Maxim-DS3231MZ_8-SOIC" deviceset="DS3231MZ/V+T" device=""/>
 <part name="FRAME1" library="frames" deviceset="LETTER_P" device=""/>
 <part name="FRAME3" library="frames" deviceset="LETTER_P" device=""/>
-<part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
-<part name="SD_3V4" library="supply1" deviceset="VDD" device=""/>
-<part name="SD_3V5" library="supply1" deviceset="VDD" device=""/>
-<part name="SD_3V6" library="supply1" deviceset="VDD" device=""/>
 <part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="H2" library="SparkFun" deviceset="M08" device="3.5MM-8"/>
@@ -25774,6 +25760,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="U$3" library="awickert" deviceset="ALOG_LOG" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="L"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
+<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25794,7 +25782,6 @@ Chad Sandell</text>
 <instance part="SUPPLY38" gate="GND" x="35.56" y="-76.2"/>
 <instance part="SUPPLY39" gate="GND" x="160.02" y="-60.96"/>
 <instance part="P+8" gate="VCC" x="167.64" y="-53.34"/>
-<instance part="P+6" gate="VCC" x="142.24" y="-45.72"/>
 <instance part="SUPPLY40" gate="GND" x="134.62" y="-71.12"/>
 <instance part="+3V5" gate="G$1" x="152.4" y="-60.96"/>
 <instance part="SUPPLY31" gate="GND" x="157.48" y="-195.58"/>
@@ -25849,7 +25836,7 @@ Chad Sandell</text>
 <net name="VCC" class="0">
 <segment>
 <wire x1="124.46" y1="-58.42" x2="154.94" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="VCC"/>
+<pinref part="U$9" gate="G$1" pin="5V"/>
 <label x="129.54" y="-58.42" size="1.778" layer="95"/>
 <wire x1="154.94" y1="-58.42" x2="154.94" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-66.04" x2="167.64" y2="-66.04" width="0.1524" layer="91"/>
@@ -25862,12 +25849,6 @@ Chad Sandell</text>
 <wire x1="137.16" y1="-71.12" x2="154.94" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-71.12" x2="154.94" y2="-66.04" width="0.1524" layer="91"/>
 <junction x="154.94" y="-66.04"/>
-</segment>
-<segment>
-<wire x1="124.46" y1="-50.8" x2="142.24" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="VIN"/>
-<wire x1="142.24" y1="-50.8" x2="142.24" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="P+6" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
 <label x="91.44" y="-124.46" size="1.778" layer="95"/>
@@ -26306,6 +26287,13 @@ Chad Sandell</text>
 <label x="132.08" y="-139.7" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="VIN" class="0">
+<segment>
+<wire x1="124.46" y1="-50.8" x2="134.62" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="VIN"/>
+<label x="129.54" y="-50.8" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -26363,10 +26351,6 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <attribute name="SHEET" x="170.18" y="1.27" size="2.54" layer="94" display="off"/>
 <attribute name="DRAWING_NAME" x="101.6" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="+3V15" gate="G$1" x="76.2" y="175.26" rot="R90"/>
-<instance part="SD_3V4" gate="G$1" x="91.44" y="175.26" rot="R270"/>
-<instance part="SD_3V5" gate="G$1" x="60.96" y="215.9"/>
-<instance part="SD_3V6" gate="G$1" x="114.3" y="228.6"/>
 <instance part="P+5" gate="VCC" x="124.46" y="152.4"/>
 <instance part="P+7" gate="VCC" x="114.3" y="154.94"/>
 <instance part="P+9" gate="VCC" x="12.7" y="139.7"/>
@@ -26387,6 +26371,8 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <attribute name="NAME" x="127.508" y="137.16" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="CLOCK_BATT" gate="G$1" x="137.16" y="121.92" rot="R90"/>
+<instance part="+3V2" gate="G$1" x="60.96" y="215.9"/>
+<instance part="+3V7" gate="G$1" x="114.3" y="228.6"/>
 </instances>
 <busses>
 </busses>
@@ -26487,13 +26473,6 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <pinref part="CLOCK_BATT" gate="G$1" pin="-"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
-<segment>
-<pinref part="SD_3V4" gate="G$1" pin="VDD"/>
-<pinref part="+3V15" gate="G$1" pin="+3V3"/>
-<wire x1="88.9" y1="175.26" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SCL" class="0">
 <segment>
 <wire x1="91.44" y1="137.16" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
@@ -26559,24 +26538,24 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <pinref part="SD1" gate="G$1" pin="CS"/>
 </segment>
 </net>
-<net name="VDD" class="0">
-<segment>
-<wire x1="60.96" y1="210.82" x2="66.04" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="SD1" gate="G$1" pin="VDD"/>
-<pinref part="SD_3V5" gate="G$1" pin="VDD"/>
-<wire x1="60.96" y1="210.82" x2="60.96" y2="213.36" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LSHIFT1" gate="P" pin="VDD"/>
-<wire x1="114.3" y1="223.52" x2="114.3" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="SD_3V6" gate="G$1" pin="VDD"/>
-</segment>
-</net>
 <net name="CS-SD" class="0">
 <segment>
 <wire x1="27.94" y1="205.74" x2="17.78" y2="205.74" width="0.1524" layer="91"/>
 <label x="17.78" y="205.74" size="1.778" layer="95"/>
 <pinref part="LSHIFT1" gate="C" pin="I"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="LSHIFT1" gate="P" pin="VDD"/>
+<wire x1="114.3" y1="223.52" x2="114.3" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<wire x1="60.96" y1="210.82" x2="66.04" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="SD1" gate="G$1" pin="VDD"/>
+<wire x1="60.96" y1="210.82" x2="60.96" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 </nets>
