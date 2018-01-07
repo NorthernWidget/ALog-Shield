@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17593,6 +17593,48 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="19.2913" y1="11.3665" x2="19.3929" y2="11.3919" layer="22" rot="R180"/>
 <rectangle x1="19.3167" y1="11.3919" x2="19.3675" y2="11.4173" layer="22" rot="R180"/>
 </package>
+<package name="NWLOGO_MED">
+<wire x1="-1.16203125" y1="-2.940684375" x2="-3.5298625" y2="1.794290625" width="0.2" layer="21"/>
+<wire x1="-3.5298625" y1="1.794290625" x2="-2.937903125" y2="2.09025625" width="0.2" layer="21"/>
+<wire x1="-2.937903125" y1="2.09025625" x2="-1.16203125" y2="-1.46148125" width="0.2" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="3.585440625" y="1.992978125"/>
+<vertex x="3.584059375" y="0.692359375"/>
+<vertex x="2.457796875" y="1.34475"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="3.585428125" y="1.992978125"/>
+<vertex x="3.584034375" y="0.692359375"/>
+<vertex x="2.457796875" y="1.34475"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="1.575415625" y="-2.201440625"/>
+<vertex x="1.205109375" y="-2.940684375"/>
+<vertex x="0.021871875" y="-0.57354375"/>
+<vertex x="-1.16203125" y="-2.940684375"/>
+<vertex x="-1.16203125" y="-1.46148125"/>
+<vertex x="0.021871875" y="0.906353125"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="-1.5323625" y="-2.201440625"/>
+<vertex x="-1.16203125" y="-2.940684375"/>
+<vertex x="0.021871875" y="-0.57354375"/>
+<vertex x="1.205109375" y="-2.940684375"/>
+<vertex x="3.424940625" y="1.054328125"/>
+<vertex x="2.83298125" y="1.350321875"/>
+<vertex x="1.205109375" y="-1.46148125"/>
+<vertex x="0.021871875" y="0.906353125"/>
+</polygon>
+<wire x1="-1.16203125" y1="-2.940684375" x2="0.021871875" y2="-0.57354375" width="0.2" layer="21"/>
+<wire x1="0.021871875" y1="-0.57354375" x2="1.205109375" y2="-2.940684375" width="0.2" layer="21"/>
+<wire x1="1.205109375" y1="-2.940684375" x2="3.424940625" y2="1.054328125" width="0.2" layer="21"/>
+<wire x1="2.83298125" y1="1.350321875" x2="1.205109375" y2="-1.46148125" width="0.2" layer="21"/>
+<wire x1="2.457796875" y1="1.34475" x2="3.585428125" y2="1.992978125" width="0.2" layer="21"/>
+<wire x1="3.585428125" y1="1.992978125" x2="3.584034375" y2="0.692359375" width="0.2" layer="21"/>
+<wire x1="3.584034375" y1="0.692359375" x2="2.457796875" y2="1.34475" width="0.2" layer="21"/>
+<wire x1="1.205109375" y1="-1.46148125" x2="0.021871875" y2="0.906353125" width="0.2" layer="21"/>
+<wire x1="0.021871875" y1="0.906353125" x2="-1.5323625" y2="-2.201440625" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ALOG_LOGO">
@@ -17616,6 +17658,9 @@ Source: AVX .. aphvc.pdf</description>
 </symbol>
 <symbol name="MADE_IN_MN">
 <text x="0" y="0" size="1.778" layer="94" font="vector">Made in Minnesota</text>
+</symbol>
+<symbol name="NWLOGO">
+<text x="-7.62" y="0" size="1.27" layer="94">Northern Widget Logo</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -17653,6 +17698,19 @@ Source: AVX .. aphvc.pdf</description>
 </gates>
 <devices>
 <device name="" package="ALOG_LOG">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NWLOGO_MED">
+<description>Medium-sized Northern Widget logo</description>
+<gates>
+<gate name="G$1" symbol="NWLOGO" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="NWLOGO_MED">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -25762,6 +25820,7 @@ by exp-lbrs.ulp</description>
 <part name="J3" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
+<part name="U$1" library="awickert" deviceset="NWLOGO_MED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25829,6 +25888,7 @@ Chad Sandell</text>
 <instance part="U$3" gate="G$1" x="25.4" y="-236.22"/>
 <instance part="LOGO1" gate="G$1" x="17.78" y="-12.7"/>
 <instance part="J3" gate="G$1" x="144.78" y="-137.16" rot="R180"/>
+<instance part="U$1" gate="G$1" x="17.78" y="-27.94"/>
 </instances>
 <busses>
 </busses>

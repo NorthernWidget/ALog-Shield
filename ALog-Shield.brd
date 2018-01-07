@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -204,7 +204,7 @@ University of Minnesota</text>
 <text x="12.831" y="15.24" size="1.016" layer="21" rot="R90">GND</text>
 <text x="23.6855" y="35.433" size="0.8128" layer="21" rot="R90">ALog-Shield v2.2.0</text>
 <text x="1.27" y="22.733" size="1.27" layer="21">Reference Resistors</text>
-<text x="37.211" y="39.8145" size="0.8128" layer="21">ALog-Shield v2.2.0
+<text x="35.687" y="38.7985" size="0.8128" layer="21">ALog-Shield v2.2.0
 02 January 2018
 Andy Wickert and
 Chad Sandell
@@ -212,6 +212,11 @@ Northern Widget LLC and
 University of Minnesota</text>
 <text x="7.874" y="17.272" size="1.27" layer="21">D4</text>
 <text x="7.874" y="13.97" size="1.27" layer="21">D7</text>
+<text x="23.368" y="70.358" size="1.016" layer="22" rot="MR180">Developed in part at the
+University of Minnesota in
+parntnership with 
+Northern Widget LLC</text>
+<text x="3.81" y="69.596" size="0.6096" layer="22" rot="MR0">TM</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -12789,6 +12794,48 @@ chip</description>
 <rectangle x1="19.2913" y1="11.3665" x2="19.3929" y2="11.3919" layer="22" rot="R180"/>
 <rectangle x1="19.3167" y1="11.3919" x2="19.3675" y2="11.4173" layer="22" rot="R180"/>
 </package>
+<package name="NWLOGO_MED">
+<wire x1="-1.16203125" y1="-2.940684375" x2="-3.5298625" y2="1.794290625" width="0.2" layer="21"/>
+<wire x1="-3.5298625" y1="1.794290625" x2="-2.937903125" y2="2.09025625" width="0.2" layer="21"/>
+<wire x1="-2.937903125" y1="2.09025625" x2="-1.16203125" y2="-1.46148125" width="0.2" layer="21"/>
+<polygon width="0" layer="21">
+<vertex x="3.585440625" y="1.992978125"/>
+<vertex x="3.584059375" y="0.692359375"/>
+<vertex x="2.457796875" y="1.34475"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="3.585428125" y="1.992978125"/>
+<vertex x="3.584034375" y="0.692359375"/>
+<vertex x="2.457796875" y="1.34475"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="1.575415625" y="-2.201440625"/>
+<vertex x="1.205109375" y="-2.940684375"/>
+<vertex x="0.021871875" y="-0.57354375"/>
+<vertex x="-1.16203125" y="-2.940684375"/>
+<vertex x="-1.16203125" y="-1.46148125"/>
+<vertex x="0.021871875" y="0.906353125"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="-1.5323625" y="-2.201440625"/>
+<vertex x="-1.16203125" y="-2.940684375"/>
+<vertex x="0.021871875" y="-0.57354375"/>
+<vertex x="1.205109375" y="-2.940684375"/>
+<vertex x="3.424940625" y="1.054328125"/>
+<vertex x="2.83298125" y="1.350321875"/>
+<vertex x="1.205109375" y="-1.46148125"/>
+<vertex x="0.021871875" y="0.906353125"/>
+</polygon>
+<wire x1="-1.16203125" y1="-2.940684375" x2="0.021871875" y2="-0.57354375" width="0.2" layer="21"/>
+<wire x1="0.021871875" y1="-0.57354375" x2="1.205109375" y2="-2.940684375" width="0.2" layer="21"/>
+<wire x1="1.205109375" y1="-2.940684375" x2="3.424940625" y2="1.054328125" width="0.2" layer="21"/>
+<wire x1="2.83298125" y1="1.350321875" x2="1.205109375" y2="-1.46148125" width="0.2" layer="21"/>
+<wire x1="2.457796875" y1="1.34475" x2="3.585428125" y2="1.992978125" width="0.2" layer="21"/>
+<wire x1="3.585428125" y1="1.992978125" x2="3.584034375" y2="0.692359375" width="0.2" layer="21"/>
+<wire x1="3.584034375" y1="0.692359375" x2="2.457796875" y2="1.34475" width="0.2" layer="21"/>
+<wire x1="1.205109375" y1="-1.46148125" x2="0.021871875" y2="0.906353125" width="0.2" layer="21"/>
+<wire x1="0.021871875" y1="0.906353125" x2="-1.5323625" y2="-2.201440625" width="0.2" layer="21"/>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Aesthetics">
@@ -13371,11 +13418,10 @@ Please make sure your boards conform to these design rules.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
-<param name="checkStop" value="0"/>
-<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -13495,7 +13541,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="46.863" y="53.975" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="LOG" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="LOG" x="49.53" y="71.12" smashed="yes" rot="R270">
-<attribute name="NAME" x="46.482" y="75.946" size="1.27" layer="21" ratio="10"/>
+<attribute name="NAME" x="47.498" y="75.946" size="1.27" layer="21" ratio="10"/>
 <attribute name="PROD_ID" value=" SWCH-08441" x="-179.705" y="172.72" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="CLOCK_BATT_DECOUPLE" library="SparkFun-Passives" package="EIA3216" value="10uF" x="21.463" y="54.991" rot="R180"/>
@@ -13528,6 +13574,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="J3" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2" value="" x="3.81" y="18.034" rot="R270">
 <attribute name="PROD_ID" value="CONN-08399" x="3.81" y="18.034" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="U$1" library="awickert" package="NWLOGO_MED" value="NWLOGO_MED" x="7.874" y="67.818" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
