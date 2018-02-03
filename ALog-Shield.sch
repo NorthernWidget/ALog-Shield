@@ -25587,7 +25587,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </classes>
 <parts>
 <part name="U$9" library="ALog-Shield" deviceset="AWICKERT_ARDUINO_SHIELD_PIN_PURPOSE" device=""/>
-<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY38" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY39" library="supply2" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
@@ -25652,6 +25651,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$1" library="awickert" deviceset="NWLOGO_MED" device=""/>
 <part name="CLK_DECOUP" library="SparkFun-Passives" deviceset="CAP" device="0805" value="10 uF"/>
+<part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25668,7 +25669,6 @@ Chad Sandell</text>
 </plain>
 <instances>
 <instance part="U$9" gate="G$1" x="91.44" y="-45.72" rot="R90"/>
-<instance part="+3V3" gate="G$1" x="43.18" y="-76.2" rot="R90"/>
 <instance part="SUPPLY38" gate="GND" x="35.56" y="-76.2"/>
 <instance part="SUPPLY39" gate="GND" x="160.02" y="-60.96"/>
 <instance part="P+8" gate="VCC" x="167.64" y="-53.34"/>
@@ -25950,11 +25950,6 @@ Chad Sandell</text>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<wire x1="45.72" y1="-76.2" x2="63.5" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="AREF"/>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <wire x1="124.46" y1="-60.96" x2="139.7" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="3V3_SWITCHED"/>
 <label x="129.54" y="-60.96" size="1.778" layer="95"/>
@@ -26185,6 +26180,13 @@ Chad Sandell</text>
 <label x="129.54" y="-50.8" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="AREF" class="0">
+<segment>
+<wire x1="53.34" y1="-76.2" x2="63.5" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="AREF"/>
+<label x="53.34" y="-76.2" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -26261,6 +26263,8 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <instance part="+3V2" gate="G$1" x="60.96" y="215.9"/>
 <instance part="+3V7" gate="G$1" x="114.3" y="228.6"/>
 <instance part="CLK_DECOUP" gate="G$1" x="109.22" y="127"/>
+<instance part="JP1" gate="G$1" x="129.54" y="58.42"/>
+<instance part="+3V3" gate="G$1" x="147.32" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -26444,6 +26448,19 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <pinref part="SD1" gate="G$1" pin="VDD"/>
 <wire x1="60.96" y1="210.82" x2="60.96" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="137.16" y1="60.96" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="60.96" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="AREF" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="58.42" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
+<label x="139.7" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
