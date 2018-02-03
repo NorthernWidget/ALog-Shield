@@ -13065,30 +13065,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
-<library name="SparkFun-Passives">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="EIA3216">
-<wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="-1.2" x2="-2.5" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="1.2" x2="-1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="1" y1="-1.2" x2="2.1" y2="-1.2" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="-1.2" x2="2.5" y2="-0.8" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="-0.8" x2="2.5" y2="0.8" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="0.8" x2="2.1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="1.2" x2="1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="0.381" y1="1.016" x2="0.381" y2="-1.016" width="0.127" layer="21"/>
-<smd name="C" x="-1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
-<smd name="A" x="1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
-<text x="-2.54" y="1.381" size="0.4064" layer="25">&gt;NAME</text>
-<text x="0.408" y="1.332" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="semicon-smd-ipc">
 <description>&lt;b&gt;IPC Standard SMD Semiconductors&lt;/b&gt;&lt;p&gt;
 A few devices defined according to the IPC standard.&lt;p&gt;
@@ -13335,6 +13311,25 @@ by exp-lbrs.ulp</description>
 </package>
 </packages>
 </library>
+<library name="SparkFun-Passives">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="0805">
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13544,7 +13539,6 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="47.498" y="75.946" size="1.27" layer="21" ratio="10"/>
 <attribute name="PROD_ID" value=" SWCH-08441" x="-179.705" y="172.72" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="CLOCK_BATT_DECOUPLE" library="SparkFun-Passives" package="EIA3216" value="10uF" x="21.463" y="54.991" rot="R180"/>
 <element name="U1" library="Maxim-DS3231MZ_8-SOIC" package="21-0041B_8" value="DS3231MZ/V+T" x="16.764" y="48.895" rot="R90">
 <attribute name="MANUFACTURER_NAME" value="Maxim" x="315.214" y="-26.035" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="DS3231MZ/V+T" x="315.214" y="-26.035" size="1.778" layer="27" rot="R90" display="off"/>
@@ -13575,6 +13569,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="PROD_ID" value="CONN-08399" x="3.81" y="18.034" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$1" library="awickert" package="NWLOGO_MED" value="NWLOGO_MED" x="7.874" y="67.818" rot="MR0"/>
+<element name="CLK_DECOUP" library="SparkFun-Passives" package="0805" value="10 uF" x="21.336" y="54.61"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -13599,7 +13594,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="A1" pad="1"/>
 <contactref element="LOG" pad="1"/>
 <contactref element="CLOCK_BATT_DECOUP" pad="2"/>
-<contactref element="CLOCK_BATT_DECOUPLE" pad="C"/>
 <contactref element="J1" pad="2"/>
 <contactref element="J2" pad="1"/>
 <contactref element="H4" pad="1"/>
@@ -13615,21 +13609,16 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="54.61" y="-1.27"/>
 <vertex x="54.61" y="78.74"/>
 </polygon>
-<via x="20.066" y="52.324" extent="1-16" drill="0.3048" shape="octagon"/>
 <via x="27.432" y="48.26" extent="1-16" drill="0.3048" shape="octagon"/>
-<via x="18.034" y="55.118" extent="1-16" drill="0.3048" shape="octagon"/>
-<via x="34.036" y="45.72" extent="1-16" drill="0.3048" shape="octagon"/>
 <wire x1="23.368" y1="52.2224" x2="23.456" y2="51.943" width="0.2032" layer="1"/>
 <contactref element="C15" pad="D2"/>
 <contactref element="C15" pad="C2"/>
 <contactref element="C15" pad="B2"/>
 <contactref element="C15" pad="A2"/>
 <via x="10.414" y="26.416" extent="1-16" drill="0.3048" shape="octagon"/>
-<via x="16.764" y="53.086" extent="1-16" drill="0.3048" shape="octagon"/>
 <contactref element="CLOCK_BATT" pad="GND"/>
-<via x="25.4" y="54.61" extent="1-16" drill="0.3048" shape="octagon"/>
 <wire x1="9.5504" y1="29.2608" x2="9.6140125" y2="29.2418" width="0.2032" layer="1"/>
-<via x="29.972" y="54.61" extent="1-16" drill="0.3048" shape="octagon"/>
+<contactref element="CLK_DECOUP" pad="2"/>
 </signal>
 <signal name="VCC">
 <contactref element="U$9" pad="5V"/>
@@ -13940,16 +13929,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="BAT">
 <contactref element="CLOCK_BATT_DECOUP" pad="1"/>
-<contactref element="CLOCK_BATT_DECOUPLE" pad="A"/>
 <contactref element="U1" pad="6"/>
-<wire x1="21.7424" y1="53.2384" x2="21.7424" y2="52.0192" width="0.2032" layer="1"/>
-<wire x1="20.1168" y1="54.864" x2="21.7424" y2="53.2384" width="0.2032" layer="1"/>
-<wire x1="21.7424" y1="52.0192" x2="21.756" y2="51.943" width="0.2032" layer="1"/>
-<wire x1="20.1168" y1="54.864" x2="20.063" y2="54.991" width="0.2032" layer="1"/>
-<wire x1="17.4752" y1="52.4256" x2="17.4752" y2="51.4096" width="0.2032" layer="1"/>
-<wire x1="19.9136" y1="54.864" x2="17.4752" y2="52.4256" width="0.2032" layer="1"/>
-<wire x1="17.4752" y1="51.4096" x2="17.399" y2="51.3588" width="0.2032" layer="1"/>
-<wire x1="19.9136" y1="54.864" x2="20.063" y2="54.991" width="0.2032" layer="1"/>
 <contactref element="CLOCK_BATT" pad="POWER0"/>
 <contactref element="CLOCK_BATT" pad="POWER1"/>
 <wire x1="17.272" y1="50.8" x2="17.272" y2="51.2064" width="0.2032" layer="1"/>
@@ -13964,6 +13944,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.5824" y1="43.4848" x2="9.3472" y2="41.2496" width="0.2032" layer="1"/>
 <wire x1="11.5824" y1="49.5808" x2="11.5824" y2="43.4848" width="0.2032" layer="1"/>
 <wire x1="6.096" y1="38.2016" x2="6.096" y2="38.1" width="0.2032" layer="1"/>
+<contactref element="CLK_DECOUP" pad="1"/>
+<wire x1="21.6916" y1="53.34" x2="21.6916" y2="52.0954" width="0.2032" layer="1"/>
+<wire x1="20.447" y1="54.5846" x2="21.6916" y2="53.34" width="0.2032" layer="1"/>
+<wire x1="21.6916" y1="52.0954" x2="21.756" y2="51.943" width="0.2032" layer="1"/>
+<wire x1="20.447" y1="54.5846" x2="20.436" y2="54.61" width="0.2032" layer="1"/>
+<wire x1="17.4244" y1="51.7398" x2="20.2692" y2="54.5846" width="0.2032" layer="1"/>
+<wire x1="17.4244" y1="51.3842" x2="17.4244" y2="51.7398" width="0.2032" layer="1"/>
+<wire x1="20.2692" y1="54.5846" x2="20.436" y2="54.61" width="0.2032" layer="1"/>
+<wire x1="17.4244" y1="51.3842" x2="17.399" y2="51.3588" width="0.2032" layer="1"/>
 </signal>
 <signal name="A0">
 <contactref element="U$9" pad="A0"/>
