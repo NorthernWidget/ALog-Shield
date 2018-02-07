@@ -23011,213 +23011,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </deviceset>
 </devicesets>
 </library>
-<library name="rc-master-smd">
-<description>&lt;b&gt;R/C MASTER-SMD! - v1.01 (07/03/2007)&lt;/b&gt;&lt;p&gt;
-&lt;p&gt;This library is a collection of SMD ONLY resistors and capacitors by various manufacturers. The pad sizes, spacing and silkscreen widths have been tweaked for use in dense fine pitch layouts where space, alignment and precision are critical. In general these components are designed for routing in grid increments of 5 mils&lt;/p&gt;
-&lt;p&gt;* Silkscreen line elements are a minimum of 8 mils in width. All components have text sizes of 0.032"  or 0.04".&lt;/p&gt;
-&lt;p&gt;* A silkscreen text values use a ratio of 18 in all cases.&lt;/p&gt;
-&lt;p&gt;* ALL PADS AND PART OUTLINES ARE SNAPPED TO A 5 MIL GRID!&lt;/p&gt;
-&lt;p&gt;&lt;h4&gt;All components are prefixed using the following conventions:&lt;/h4&gt;&lt;/p&gt;
-&lt;table width="380" border="1" bordercolor="#000000"&gt;
-  &lt;tr&gt; 
-    &lt;td width="81" bgcolor="#33CCFF"&gt;&lt;div align="center"&gt;&lt;strong&gt;Prefix&lt;/strong&gt;&lt;/div&gt;&lt;/td&gt;
-    &lt;td width="289" bgcolor="#33CCFF"&gt;&lt;div align="center"&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/div&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt; 
-    &lt;td&gt;&lt;div align="center"&gt;CBP_&lt;/div&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;div align="center"&gt;Bipolar Electrolytic Types&lt;/div&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt; 
-    &lt;td&gt;&lt;div align="center"&gt;CCA_&lt;/div&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;div align="center"&gt;Chip Cap Array Types&lt;/div&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt; 
-    &lt;td&gt;&lt;div align="center"&gt;CP_&lt;/div&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;div align="center"&gt;Polarized Electrolytic/Tantalum Types&lt;/div&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt; 
-    &lt;td&gt;&lt;div align="center"&gt;C_&lt;/div&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;div align="center"&gt;Non-Polarized Film / Chip Types&lt;/div&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt; 
-    &lt;td&gt;&lt;div align="center"&gt;FB_&lt;/div&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;div align="center"&gt;Simple Ferrite Bead Types&lt;/div&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt; 
-    &lt;td&gt;&lt;div align="center"&gt;L_&lt;/div&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;div align="center"&gt;Simple Chip Inductors&lt;/div&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt; 
-    &lt;td&gt;&lt;div align="center"&gt;R_&lt;/div&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;div align="center"&gt;Resistor Types&lt;/div&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;author&gt;THIS LIBRARY IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED.&lt;br&gt;Copyright (C) 2007, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;
-&lt;/author&gt;</description>
-<packages>
-<package name="CECJ-1206">
-<description>&lt;b&gt;CAPACITOR ARRAY&lt;/b&gt; - Panasonic&lt;p&gt;
-0.8 mm lead spacing, ECJ-1206 Series, grid 0.10 mm</description>
-<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.2032" layer="51"/>
-<wire x1="1.6" y1="-0.8" x2="1.6" y2="0.8" width="0.2032" layer="51"/>
-<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.2032" layer="51"/>
-<wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.2032" layer="51"/>
-<wire x1="-1.667" y1="1.5081" x2="1.6669" y2="1.5081" width="0.2032" layer="21"/>
-<wire x1="1.6669" y1="1.5081" x2="1.6669" y2="-1.5081" width="0.2032" layer="21"/>
-<wire x1="1.6669" y1="-1.5081" x2="-1.667" y2="-1.5081" width="0.2032" layer="21"/>
-<wire x1="-1.667" y1="-1.5081" x2="-1.667" y2="1.5081" width="0.2032" layer="21"/>
-<wire x1="-1.2" y1="-0.3" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
-<wire x1="-1" y1="-0.1" x2="-1.2" y2="-0.3" width="0.2032" layer="21"/>
-<rectangle x1="-1.4" y1="0.5" x2="-1" y2="0.8" layer="51"/>
-<rectangle x1="-0.6" y1="0.5" x2="-0.2" y2="0.8" layer="51"/>
-<rectangle x1="0.2" y1="0.5" x2="0.6" y2="0.8" layer="51"/>
-<rectangle x1="1" y1="0.5" x2="1.4" y2="0.8" layer="51"/>
-<rectangle x1="-1.4" y1="-0.8" x2="-1" y2="-0.5" layer="51"/>
-<rectangle x1="-0.6" y1="-0.8" x2="-0.2" y2="-0.5" layer="51"/>
-<rectangle x1="0.2" y1="-0.8" x2="0.6" y2="-0.5" layer="51"/>
-<rectangle x1="1" y1="-0.8" x2="1.4" y2="-0.5" layer="51"/>
-<smd name="A1" x="-1.2" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="A2" x="-1.2" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="B1" x="-0.4" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="B2" x="-0.4" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="C1" x="0.4" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="C2" x="0.4" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="D1" x="1.2" y="-0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<smd name="D2" x="1.2" y="0.9" dx="0.8128" dy="0.4064" layer="1" rot="R90"/>
-<text x="-2.032" y="-1.397" size="0.8128" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-1.397" size="0.6096" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-</package>
-<package name="CECJ-0805">
-<description>&lt;b&gt;CAPACITOR ARRAY&lt;/b&gt; - Panasonic&lt;p&gt;
-0.8 mm lead spacing, ECJ-0805 Series, grid 0.05 mm</description>
-<wire x1="-1.1" y1="0.65" x2="-1.1" y2="-0.65" width="0.2032" layer="51"/>
-<wire x1="1.1" y1="-0.65" x2="1.1" y2="0.65" width="0.2032" layer="51"/>
-<wire x1="-1.1" y1="0.65" x2="1.1" y2="0.65" width="0.2032" layer="51"/>
-<wire x1="-1.1" y1="-0.65" x2="1.1" y2="-0.65" width="0.2032" layer="51"/>
-<wire x1="-1.1906" y1="1.27" x2="1.1906" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.1906" y1="1.27" x2="1.1906" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.1906" y1="-1.27" x2="-1.1906" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-1.1906" y1="-1.27" x2="-1.1906" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-0.75" y1="-0.15" x2="-0.95" y2="0.05" width="0.2032" layer="21"/>
-<wire x1="-0.55" y1="0.05" x2="-0.75" y2="-0.15" width="0.2032" layer="21"/>
-<smd name="A1" x="-0.75" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="A2" x="-0.75" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="B1" x="-0.25" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="B2" x="-0.25" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="C1" x="0.25" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="C2" x="0.25" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="D1" x="0.75" y="-0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<smd name="D2" x="0.75" y="0.65" dx="0.6096" dy="0.3048" layer="1" rot="R90"/>
-<text x="-1.524" y="-1.016" size="0.8128" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="2.032" y="-1.016" size="0.6096" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-</package>
-<package name="CECJ-CTS-031817">
-<description>Lengthen pads</description>
-<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.2032" layer="51"/>
-<wire x1="1.6" y1="-0.8" x2="1.6" y2="0.8" width="0.2032" layer="51"/>
-<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.2032" layer="51"/>
-<wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.2032" layer="51"/>
-<wire x1="-1.667" y1="1.5081" x2="1.6669" y2="1.5081" width="0.2032" layer="21"/>
-<wire x1="1.6669" y1="1.5081" x2="1.6669" y2="-1.5081" width="0.2032" layer="21"/>
-<wire x1="1.6669" y1="-1.5081" x2="-1.667" y2="-1.5081" width="0.2032" layer="21"/>
-<wire x1="-1.667" y1="-1.5081" x2="-1.667" y2="1.5081" width="0.2032" layer="21"/>
-<wire x1="-1.2" y1="-0.3" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
-<wire x1="-1" y1="-0.1" x2="-1.2" y2="-0.3" width="0.2032" layer="21"/>
-<rectangle x1="-1.4" y1="0.5" x2="-1" y2="0.8" layer="51"/>
-<rectangle x1="-0.6" y1="0.5" x2="-0.2" y2="0.8" layer="51"/>
-<rectangle x1="0.2" y1="0.5" x2="0.6" y2="0.8" layer="51"/>
-<rectangle x1="1" y1="0.5" x2="1.4" y2="0.8" layer="51"/>
-<rectangle x1="-1.4" y1="-0.8" x2="-1" y2="-0.5" layer="51"/>
-<rectangle x1="-0.6" y1="-0.8" x2="-0.2" y2="-0.5" layer="51"/>
-<rectangle x1="0.2" y1="-0.8" x2="0.6" y2="-0.5" layer="51"/>
-<rectangle x1="1" y1="-0.8" x2="1.4" y2="-0.5" layer="51"/>
-<smd name="A1" x="-1.2" y="-0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
-<smd name="A2" x="-1.2" y="0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
-<smd name="B1" x="-0.4" y="-0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
-<smd name="B2" x="-0.4" y="0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
-<smd name="C1" x="0.4" y="-0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
-<smd name="C2" x="0.4" y="0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
-<smd name="D1" x="1.2" y="-0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
-<smd name="D2" x="1.2" y="0.8" dx="1.1" dy="0.4064" layer="1" rot="R90"/>
-<text x="-2.032" y="-1.397" size="0.8128" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-1.397" size="0.6096" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="CNP-">
-<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="1.5875" x2="0.635" y2="0" width="0.508" layer="94"/>
-<wire x1="0.635" y1="0" x2="0.635" y2="-1.5875" width="0.508" layer="94"/>
-<wire x1="-0.635" y1="1.5875" x2="-0.635" y2="0" width="0.508" layer="94"/>
-<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.5875" width="0.508" layer="94"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-2.794" y="-1.27" size="0.8636" layer="93">1</text>
-<text x="2.286" y="-1.27" size="0.8636" layer="93">2</text>
-<text x="1.905" y="1.27" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-4.1275" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CCA_" prefix="C" uservalue="yes">
-<description>&lt;B&gt;CHIP CAP ARRAY&lt;/B&gt;</description>
-<gates>
-<gate name="A" symbol="CNP-" x="-20.32" y="15.24" addlevel="always"/>
-<gate name="B" symbol="CNP-" x="-20.32" y="7.62" addlevel="always"/>
-<gate name="C" symbol="CNP-" x="-20.32" y="0" addlevel="always"/>
-<gate name="D" symbol="CNP-" x="-20.32" y="-7.62" addlevel="always"/>
-</gates>
-<devices>
-<device name="ECJ-0805" package="CECJ-0805">
-<connects>
-<connect gate="A" pin="1" pad="A1"/>
-<connect gate="A" pin="2" pad="A2"/>
-<connect gate="B" pin="1" pad="B1"/>
-<connect gate="B" pin="2" pad="B2"/>
-<connect gate="C" pin="1" pad="C1"/>
-<connect gate="C" pin="2" pad="C2"/>
-<connect gate="D" pin="1" pad="D1"/>
-<connect gate="D" pin="2" pad="D2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="ECJ-1206" package="CECJ-1206">
-<connects>
-<connect gate="A" pin="1" pad="A1"/>
-<connect gate="A" pin="2" pad="A2"/>
-<connect gate="B" pin="1" pad="B1"/>
-<connect gate="B" pin="2" pad="B2"/>
-<connect gate="C" pin="1" pad="C1"/>
-<connect gate="C" pin="2" pad="C2"/>
-<connect gate="D" pin="1" pad="D1"/>
-<connect gate="D" pin="2" pad="D2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="" package="CECJ-CTS-031817">
-<connects>
-<connect gate="A" pin="1" pad="A1"/>
-<connect gate="A" pin="2" pad="A2"/>
-<connect gate="B" pin="1" pad="B1"/>
-<connect gate="B" pin="2" pad="B2"/>
-<connect gate="C" pin="1" pad="C1"/>
-<connect gate="C" pin="2" pad="C2"/>
-<connect gate="D" pin="1" pad="D1"/>
-<connect gate="D" pin="2" pad="D2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="semicon-smd-ipc">
 <description>&lt;b&gt;IPC Standard SMD Semiconductors&lt;/b&gt;&lt;p&gt;
 A few devices defined according to the IPC standard.&lt;p&gt;
@@ -24476,7 +24269,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_04" device="SCREW"/>
-<part name="C15" library="rc-master-smd" deviceset="CCA_" device="" value="10nF"/>
 <part name="CLOCK_BATT" library="awickert" deviceset="LINX-BAT-HLD-012-SMT-OTL" device="" value="Linx BAT-HLD-012-SMT"/>
 <part name="U$2" library="awickert" deviceset="MADE_IN_MN_220_SHIELD" device=""/>
 <part name="U$3" library="awickert" deviceset="ALOG_LOG" device=""/>
@@ -24548,10 +24340,6 @@ Chad Sandell</text>
 <instance part="+3V1" gate="G$1" x="81.28" y="-129.54"/>
 <instance part="SUPPLY3" gate="GND" x="73.66" y="-137.16"/>
 <instance part="J2" gate="G$1" x="109.22" y="-137.16" rot="R180"/>
-<instance part="C15" gate="A" x="48.26" y="-195.58"/>
-<instance part="C15" gate="B" x="48.26" y="-185.42"/>
-<instance part="C15" gate="C" x="48.26" y="-175.26"/>
-<instance part="C15" gate="D" x="48.26" y="-165.1"/>
 <instance part="U$2" gate="G$1" x="17.78" y="-233.68"/>
 <instance part="U$3" gate="G$1" x="25.4" y="-236.22"/>
 <instance part="LOGO1" gate="G$1" x="17.78" y="-12.7"/>
@@ -24687,18 +24475,14 @@ Chad Sandell</text>
 <segment>
 <pinref part="SUPPLY53" gate="GND" pin="GND"/>
 <wire x1="63.5" y1="-165.1" x2="63.5" y2="-175.26" width="0.1524" layer="91"/>
-<pinref part="C15" gate="D" pin="2"/>
 <wire x1="63.5" y1="-175.26" x2="63.5" y2="-185.42" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-185.42" x2="63.5" y2="-195.58" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-195.58" x2="63.5" y2="-205.74" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-165.1" x2="50.8" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="C15" gate="C" pin="2"/>
 <wire x1="50.8" y1="-175.26" x2="63.5" y2="-175.26" width="0.1524" layer="91"/>
 <junction x="63.5" y="-175.26"/>
-<pinref part="C15" gate="B" pin="2"/>
 <wire x1="50.8" y1="-185.42" x2="63.5" y2="-185.42" width="0.1524" layer="91"/>
 <junction x="63.5" y="-185.42"/>
-<pinref part="C15" gate="A" pin="2"/>
 <wire x1="50.8" y1="-195.58" x2="63.5" y2="-195.58" width="0.1524" layer="91"/>
 <junction x="63.5" y="-195.58"/>
 </segment>
@@ -24768,7 +24552,6 @@ Chad Sandell</text>
 </segment>
 <segment>
 <pinref part="A2" gate="G$1" pin="2"/>
-<pinref part="C15" gate="B" pin="1"/>
 <wire x1="35.56" y1="-185.42" x2="45.72" y2="-185.42" width="0.1524" layer="91"/>
 <label x="38.1" y="-185.42" size="1.778" layer="95"/>
 </segment>
@@ -24880,7 +24663,6 @@ Chad Sandell</text>
 </segment>
 <segment>
 <pinref part="A0" gate="G$1" pin="2"/>
-<pinref part="C15" gate="D" pin="1"/>
 <wire x1="35.56" y1="-165.1" x2="45.72" y2="-165.1" width="0.1524" layer="91"/>
 <label x="38.1" y="-165.1" size="1.778" layer="95"/>
 </segment>
@@ -24897,7 +24679,6 @@ Chad Sandell</text>
 <pinref part="H2" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<pinref part="C15" gate="A" pin="1"/>
 <pinref part="A3" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="-195.58" x2="35.56" y2="-195.58" width="0.1524" layer="91"/>
 <label x="38.1" y="-195.58" size="1.778" layer="95"/>
@@ -24928,7 +24709,6 @@ Chad Sandell</text>
 </segment>
 <segment>
 <pinref part="A1" gate="G$1" pin="2"/>
-<pinref part="C15" gate="C" pin="1"/>
 <wire x1="35.56" y1="-175.26" x2="45.72" y2="-175.26" width="0.1524" layer="91"/>
 <label x="38.1" y="-175.26" size="1.778" layer="95"/>
 </segment>
