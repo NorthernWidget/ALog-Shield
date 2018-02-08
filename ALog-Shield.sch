@@ -20771,110 +20771,6 @@ Includes Amendment 1, October 1996&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="Maxim-DS3231MZ_8-SOIC">
-<packages>
-<package name="21-0041B_8">
-<smd name="1" x="-2.4638" y="1.905" dx="1.9812" dy="0.5334" layer="1"/>
-<smd name="2" x="-2.4638" y="0.635" dx="1.9812" dy="0.5334" layer="1"/>
-<smd name="3" x="-2.4638" y="-0.635" dx="1.9812" dy="0.5334" layer="1"/>
-<smd name="4" x="-2.4638" y="-1.905" dx="1.9812" dy="0.5334" layer="1"/>
-<smd name="5" x="2.4638" y="-1.905" dx="1.9812" dy="0.5334" layer="1"/>
-<smd name="6" x="2.4638" y="-0.635" dx="1.9812" dy="0.5334" layer="1"/>
-<smd name="7" x="2.4638" y="0.635" dx="1.9812" dy="0.5334" layer="1"/>
-<smd name="8" x="2.4638" y="1.905" dx="1.9812" dy="0.5334" layer="1"/>
-<wire x1="-1.9812" y1="1.6764" x2="-1.9812" y2="2.1336" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="2.1336" x2="-3.0988" y2="2.1336" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="2.1336" x2="-3.0988" y2="1.651" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="1.651" x2="-1.9812" y2="1.6764" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="0.4064" x2="-1.9812" y2="0.8636" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="0.8636" x2="-3.0988" y2="0.8636" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="0.8636" x2="-3.0988" y2="0.381" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="0.381" x2="-1.9812" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-0.8636" x2="-1.9812" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-0.4064" x2="-3.0988" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-0.4064" x2="-3.0988" y2="-0.889" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-0.889" x2="-1.9812" y2="-0.8636" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-2.1336" x2="-1.9812" y2="-1.6764" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-1.6764" x2="-3.0988" y2="-1.6764" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-1.6764" x2="-3.0988" y2="-2.159" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-2.159" x2="-1.9812" y2="-2.1336" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-1.6764" x2="1.9812" y2="-2.1336" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-2.1336" x2="3.0988" y2="-2.1336" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-2.1336" x2="3.0988" y2="-1.651" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-1.651" x2="1.9812" y2="-1.6764" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-0.4064" x2="1.9812" y2="-0.8636" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-0.8636" x2="3.0988" y2="-0.8636" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-0.8636" x2="3.0988" y2="-0.381" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-0.381" x2="1.9812" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="0.8636" x2="1.9812" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="0.4064" x2="3.0988" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="0.4064" x2="3.0988" y2="0.889" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="0.889" x2="1.9812" y2="0.8636" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="2.1336" x2="1.9812" y2="1.6764" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="1.6764" x2="3.0988" y2="1.6764" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="1.6764" x2="3.0988" y2="2.159" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="2.159" x2="1.9812" y2="2.1336" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-2.4892" x2="1.9812" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-2.4892" x2="1.9812" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="2.4892" x2="-1.9812" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="2.4892" x2="-1.9812" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="2.5146" x2="-0.3048" y2="2.4892" width="0.1524" layer="51" curve="-180"/>
-<text x="-3.302" y="2.3114" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<wire x1="-1.4224" y1="-2.4892" x2="1.4224" y2="-2.4892" width="0.1524" layer="21"/>
-<wire x1="1.4224" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="21"/>
-<wire x1="-0.3048" y1="2.4892" x2="-1.4224" y2="2.4892" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="2.5146" x2="-0.3048" y2="2.4892" width="0.1524" layer="21" curve="-180"/>
-<text x="-3.302" y="2.3114" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-</package>
-</packages>
-<symbols>
-<symbol name="DS3231MZ/V+T">
-<pin name="32KHZ" x="0" y="0" direction="pas"/>
-<pin name="VCC" x="0" y="-2.54" direction="pwr"/>
-<pin name="*INT/SQW" x="0" y="-5.08" direction="pas"/>
-<pin name="*RST" x="0" y="-7.62" direction="pas"/>
-<pin name="GND" x="71.12" y="-7.62" direction="pwr" rot="R180"/>
-<pin name="VBAT" x="71.12" y="-5.08" direction="pwr" rot="R180"/>
-<pin name="SDA" x="71.12" y="-2.54" direction="pas" rot="R180"/>
-<pin name="SCL" x="71.12" y="0" direction="pas" rot="R180"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="63.5" y2="-12.7" width="0.1524" layer="94"/>
-<wire x1="63.5" y1="-12.7" x2="63.5" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="63.5" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<text x="30.8356" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-<text x="30.2006" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DS3231MZ/V+T" prefix="U">
-<gates>
-<gate name="A" symbol="DS3231MZ/V+T" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="21-0041B_8">
-<connects>
-<connect gate="A" pin="*INT/SQW" pad="3"/>
-<connect gate="A" pin="*RST" pad="4"/>
-<connect gate="A" pin="32KHZ" pad="1"/>
-<connect gate="A" pin="GND" pad="5"/>
-<connect gate="A" pin="SCL" pad="8"/>
-<connect gate="A" pin="SDA" pad="7"/>
-<connect gate="A" pin="VBAT" pad="6"/>
-<connect gate="A" pin="VCC" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER_NAME" value="Maxim" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="DS3231MZ/V+T" constant="no"/>
-<attribute name="VENDOR" value="Maxim" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="frames">
 <description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
 <packages>
@@ -21470,6 +21366,43 @@ by exp-lbrs.ulp</description>
 <wire x1="3" y1="-3" x2="3" y2="3" width="0.127" layer="21"/>
 <wire x1="3" y1="3" x2="-3" y2="3" width="0.127" layer="21"/>
 </package>
+<package name="SO08">
+<description>SOIC, 0.15 inch width</description>
+<wire x1="2.3368" y1="1.9463" x2="-2.3368" y2="1.9463" width="0.2032" layer="21"/>
+<wire x1="2.4368" y1="-1.9463" x2="2.7178" y2="-1.5653" width="0.2032" layer="21" curve="90"/>
+<wire x1="-2.7178" y1="1.4653" x2="-2.3368" y2="1.9463" width="0.2032" layer="21" curve="-90.023829"/>
+<wire x1="2.3368" y1="1.9463" x2="2.7178" y2="1.5653" width="0.2032" layer="21" curve="-90.030084"/>
+<wire x1="-2.7178" y1="-1.6653" x2="-2.3368" y2="-1.9463" width="0.2032" layer="21" curve="90.060185"/>
+<wire x1="-2.3368" y1="-1.9463" x2="2.4368" y2="-1.9463" width="0.2032" layer="21"/>
+<wire x1="2.7178" y1="-1.5653" x2="2.7178" y2="1.5653" width="0.2032" layer="21"/>
+<wire x1="-2.667" y1="0.6096" x2="-2.667" y2="-0.6604" width="0.2032" layer="21" curve="-180"/>
+<wire x1="-2.7178" y1="1.4526" x2="-2.7178" y2="0.6096" width="0.2032" layer="21"/>
+<wire x1="-2.7178" y1="-1.6653" x2="-2.7178" y2="-0.6604" width="0.2032" layer="21"/>
+<rectangle x1="-2.159" y1="-3.302" x2="-1.651" y2="-2.2733" layer="51"/>
+<rectangle x1="-0.889" y1="-3.302" x2="-0.381" y2="-2.2733" layer="51"/>
+<rectangle x1="0.381" y1="-3.302" x2="0.889" y2="-2.2733" layer="51"/>
+<rectangle x1="1.651" y1="-3.302" x2="2.159" y2="-2.2733" layer="51"/>
+<rectangle x1="-0.889" y1="2.286" x2="-0.381" y2="3.302" layer="51"/>
+<rectangle x1="0.381" y1="2.286" x2="0.889" y2="3.302" layer="51"/>
+<rectangle x1="1.651" y1="2.286" x2="2.159" y2="3.302" layer="51"/>
+<rectangle x1="-2.159" y1="2.286" x2="-1.651" y2="3.302" layer="51"/>
+<smd name="1" x="-1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="2" x="-0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="5" x="1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="6" x="0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<text x="-3.175" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="3.81" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
+<polygon width="0.002540625" layer="21">
+<vertex x="-2.69875" y="-2.38125" curve="90"/>
+<vertex x="-3.01625" y="-2.06375" curve="90"/>
+<vertex x="-3.33375" y="-2.38125" curve="90"/>
+<vertex x="-3.01625" y="-2.69875" curve="90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="BUTTON">
@@ -21482,6 +21415,23 @@ by exp-lbrs.ulp</description>
 <pin name="4" x="15.24" y="-2.54" visible="off" length="middle" rot="R180"/>
 <wire x1="5.08" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-2.54" x2="10.16" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="DS3231M">
+<description>DS3231M I2C Real Time Clock.</description>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<pin name="32KHZ" x="-12.7" y="5.08" length="middle" direction="out"/>
+<pin name="GND" x="12.7" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="RST" x="-12.7" y="-2.54" length="middle"/>
+<pin name="SCL" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="SDA" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="SQW" x="-12.7" y="0" length="middle" direction="out"/>
+<pin name="VBAT" x="12.7" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<text x="-7.62" y="8.382" size="1.778" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96" font="vector" ratio="10">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -21511,6 +21461,40 @@ by exp-lbrs.ulp</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS3231M" prefix="RTC">
+<description>&lt;h3&gt;DS3231M Real Time Clock&lt;/h3&gt;
+&lt;p&gt;Accuracy +/-5ppm.  Battery Backup.  2.3V to 5.5V.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Beagle/DS3231M.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12773"&gt;CryptoCape&lt;/a&gt; (DEV-12773)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13183"&gt;SparkFun CryptoShield&lt;/a&gt; (DEV-13183)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="DS3231M" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="32KHZ" pad="1"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="RST" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="8"/>
+<connect gate="G$1" pin="SDA" pad="7"/>
+<connect gate="G$1" pin="SQW" pad="3"/>
+<connect gate="G$1" pin="VBAT" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="DS3231MZ+-ND" constant="no"/>
+<attribute name="MF" value="Maxim" constant="no"/>
+<attribute name="MPN" value="DS3231MZ+" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -26304,7 +26288,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="SUPPLY56" library="supply2" deviceset="GND" device=""/>
 <part name="D2" library="semicon-smd-ipc" deviceset="DIODE_AC-CA_" device="" value="BAT54"/>
 <part name="LOG" library="bschulz" deviceset="BUTTON" device="4.2X3.2" value="LOG"/>
-<part name="U1" library="Maxim-DS3231MZ_8-SOIC" deviceset="DS3231MZ/V+T" device=""/>
 <part name="FRAME1" library="frames" deviceset="LETTER_P" device=""/>
 <part name="FRAME3" library="frames" deviceset="LETTER_P" device=""/>
 <part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
@@ -26339,6 +26322,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C2" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="0.1UF"/>
 <part name="C3" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="0.1UF"/>
 <part name="C4" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="0.1UF"/>
+<part name="RTC1" library="bschulz" deviceset="DS3231M" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26921,8 +26905,7 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <instance part="CLOCK_BATT_DECOUP" gate="G$1" x="99.06" y="129.54" smashed="yes">
 <attribute name="VALUE" x="100.584" y="124.841" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY56" gate="GND" x="137.16" y="106.68"/>
-<instance part="U1" gate="A" x="20.32" y="137.16"/>
+<instance part="SUPPLY56" gate="GND" x="137.16" y="91.44"/>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="FRAME3" gate="G$2" x="83.82" y="0" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="96.52" y="1.27" size="2.54" layer="94"/>
@@ -26931,15 +26914,16 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 </instance>
 <instance part="P+5" gate="VCC" x="124.46" y="152.4"/>
 <instance part="P+7" gate="VCC" x="114.3" y="154.94"/>
-<instance part="P+9" gate="VCC" x="12.7" y="139.7"/>
-<instance part="CLOCK_BATT" gate="G$1" x="137.16" y="121.92" rot="R90"/>
+<instance part="P+9" gate="VCC" x="58.42" y="139.7"/>
+<instance part="CLOCK_BATT" gate="G$1" x="137.16" y="109.22" rot="R90"/>
 <instance part="+3V2" gate="G$1" x="60.96" y="215.9"/>
 <instance part="+3V7" gate="G$1" x="114.3" y="228.6"/>
-<instance part="CLK_DECOUP" gate="G$1" x="109.22" y="127"/>
+<instance part="CLK_DECOUP" gate="G$1" x="109.22" y="129.54"/>
 <instance part="JP1" gate="G$1" x="129.54" y="58.42"/>
 <instance part="+3V3" gate="G$1" x="147.32" y="68.58"/>
 <instance part="R_PU_L" gate="G$1" x="114.3" y="142.24" rot="R270"/>
 <instance part="R_PU_A" gate="G$1" x="124.46" y="139.7" rot="R270"/>
+<instance part="RTC1" gate="G$1" x="78.74" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -26956,10 +26940,10 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <pinref part="R_PU_L" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="134.62" x2="12.7" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="VCC"/>
-<wire x1="12.7" y1="134.62" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="134.62" x2="58.42" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="134.62" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="P+9" gate="VCC" pin="VCC"/>
+<pinref part="RTC1" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="DI" class="0">
@@ -27022,7 +27006,7 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <segment>
 <pinref part="CLOCK_BATT_DECOUP" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="119.38" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="121.92" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="124.46" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="119.38" x2="99.06" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="129.54" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="119.38" x2="93.98" y2="109.22" width="0.1524" layer="91"/>
@@ -27031,12 +27015,12 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <pinref part="SUPPLY36" gate="GND" pin="GND"/>
 <wire x1="99.06" y1="119.38" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
 <junction x="99.06" y="119.38"/>
-<pinref part="U1" gate="A" pin="GND"/>
 <pinref part="CLK_DECOUP" gate="G$1" pin="2"/>
+<pinref part="RTC1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="SUPPLY56" gate="GND" pin="GND"/>
-<wire x1="137.16" y1="109.22" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="93.98" x2="137.16" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="CLOCK_BATT" gate="G$1" pin="-"/>
 </segment>
 </net>
@@ -27044,23 +27028,23 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <segment>
 <wire x1="91.44" y1="137.16" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
 <label x="99.06" y="137.16" size="1.778" layer="95"/>
-<pinref part="U1" gate="A" pin="SCL"/>
 <pinref part="R_PU_L" gate="G$1" pin="2"/>
+<pinref part="RTC1" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <wire x1="91.44" y1="134.62" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
 <label x="99.06" y="134.62" size="1.778" layer="95"/>
-<pinref part="U1" gate="A" pin="SDA"/>
 <pinref part="R_PU_A" gate="G$1" pin="2"/>
+<pinref part="RTC1" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="INT0" class="0">
 <segment>
-<label x="15.24" y="132.08" size="1.778" layer="95"/>
-<wire x1="20.32" y1="132.08" x2="15.24" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="*INT/SQW"/>
+<label x="60.96" y="132.08" size="1.778" layer="95"/>
+<wire x1="66.04" y1="132.08" x2="60.96" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="RTC1" gate="G$1" pin="SQW"/>
 </segment>
 </net>
 <net name="BAT" class="0">
@@ -27069,13 +27053,13 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <label x="93.98" y="132.08" size="1.778" layer="95"/>
 <pinref part="CLOCK_BATT_DECOUP" gate="G$1" pin="1"/>
 <junction x="99.06" y="132.08"/>
-<wire x1="99.06" y1="132.08" x2="109.22" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="VBAT"/>
-<wire x1="109.22" y1="129.54" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="132.08" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="132.08" x2="137.16" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="CLOCK_BATT" gate="G$1" pin="+"/>
 <pinref part="CLK_DECOUP" gate="G$1" pin="1"/>
-<junction x="109.22" y="129.54"/>
+<junction x="109.22" y="132.08"/>
+<pinref part="RTC1" gate="G$1" pin="VBAT"/>
 </segment>
 </net>
 <net name="SD_DI" class="0">
