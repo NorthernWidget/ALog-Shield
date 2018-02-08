@@ -368,23 +368,6 @@ type 0207, grid 10 mm</description>
 <rectangle x1="3.175" y1="-0.3048" x2="4.0386" y2="0.3048" layer="21"/>
 <rectangle x1="-4.0386" y1="-0.3048" x2="-3.175" y2="0.3048" layer="21"/>
 </package>
-<package name="R0603">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
-<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<text x="-0.889" y="0.889" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.889" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
 </packages>
 </library>
 <library name="awickert">
@@ -13420,7 +13403,12 @@ Please make sure your boards conform to these design rules.</description>
 <element name="A2" library="resistor" package="0207/10" value="" x="10.414" y="28.956"/>
 <element name="A3" library="resistor" package="0207/10" value="" x="10.414" y="26.416"/>
 <element name="LED1" library="SparkFun-LED" package="LED-1206" value="" x="46.609" y="56.007"/>
-<element name="R_LED1" library="resistor" package="R0603" value="220" x="42.037" y="56.007"/>
+<element name="R_LED1" library="bschulz_passives" package="R0603" value="220" x="42.037" y="56.007">
+<attribute name="DIGIKEY" value="311-330HRCT-ND" x="42.037" y="56.007" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Yageo" x="42.037" y="56.007" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0603FR-07330RL" x="42.037" y="56.007" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE_PART" value="330" x="42.037" y="56.007" size="1.778" layer="27" display="off"/>
+</element>
 <element name="A1" library="resistor" package="0207/10" value="" x="10.414" y="31.496"/>
 <element name="RESET" library="bschulz" package="SWITCH_4.2X3.2" value="Reset" x="49.022" y="4.572" smashed="yes" rot="R90">
 <attribute name="NAME" x="45.974" y="8.382" size="1.27" layer="21" ratio="10"/>
@@ -14012,9 +14000,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="LED+1">
 <contactref element="LED1" pad="A"/>
 <contactref element="R_LED1" pad="2"/>
-<wire x1="44.9072" y1="56.0832" x2="43.0784" y2="56.0832" width="0.2032" layer="1"/>
-<wire x1="43.0784" y1="56.0832" x2="42.887" y2="56.007" width="0.2032" layer="1"/>
-<wire x1="44.9072" y1="56.0832" x2="45.109" y2="56.007" width="0.2032" layer="1"/>
+<wire x1="42.887" y1="56.007" x2="45.109" y2="56.007" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="LOG" pad="2"/>
@@ -14054,15 +14040,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="D8-EXT">
 <contactref element="U$9" pad="D8"/>
 <contactref element="R_LED1" pad="1"/>
-<wire x1="41.0464" y1="56.0832" x2="41.187" y2="56.007" width="0.2032" layer="1"/>
-<wire x1="38.1508" y1="58.9788" x2="41.0464" y2="56.0832" width="0.2032" layer="1"/>
-<via x="38.1508" y="58.9788" extent="1-16" drill="0.3048"/>
-<wire x1="35.1536" y1="59.1312" x2="37.9984" y2="59.1312" width="0.2032" layer="16"/>
-<wire x1="33.7312" y1="60.5536" x2="35.1536" y2="59.1312" width="0.2032" layer="16"/>
-<wire x1="28.6512" y1="60.5536" x2="33.7312" y2="60.5536" width="0.2032" layer="16"/>
-<wire x1="27.2288" y1="61.976" x2="28.6512" y2="60.5536" width="0.2032" layer="16"/>
-<wire x1="37.9984" y1="59.1312" x2="38.1508" y2="58.9788" width="0.2032" layer="16"/>
-<wire x1="27.2288" y1="61.976" x2="26.3525" y2="61.976" width="0.2032" layer="16"/>
+<wire x1="26.3525" y1="61.976" x2="41.187" y2="56.007" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D9-CS-EXT">
 <contactref element="U$9" pad="D9"/>
