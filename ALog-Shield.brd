@@ -13382,7 +13382,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="A2" library="resistor" package="0207/10" value="" x="10.414" y="28.956"/>
 <element name="A3" library="resistor" package="0207/10" value="" x="10.414" y="26.416"/>
 <element name="LED1" library="SparkFun-LED" package="LED-1206" value="" x="46.609" y="56.007"/>
-<element name="R_LED1" library="bschulz_passives" package="R0603" value="220" x="42.037" y="56.007">
+<element name="R_LED1" library="bschulz_passives" package="R0603" value="330" x="42.037" y="56.007">
 <attribute name="DIGIKEY" value="311-330HRCT-ND" x="42.037" y="56.007" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Yageo" x="42.037" y="56.007" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0603FR-07330RL" x="42.037" y="56.007" size="1.778" layer="27" display="off"/>

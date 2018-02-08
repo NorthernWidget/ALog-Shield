@@ -26277,7 +26277,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED1" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="SUPPLY45" library="supply2" deviceset="GND" device=""/>
-<part name="R_LED1" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="330" value="220"/>
+<part name="R_LED1" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="330" value="330"/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="A1" library="resistor" deviceset="R-US_" device="0207/10"/>
 <part name="SUPPLY47" library="supply2" deviceset="GND" device=""/>
