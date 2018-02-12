@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -29393,7 +29393,7 @@ Connect to level shift I2C?</text>
 <instance part="SUPPLY39" gate="GND" x="160.02" y="-60.96"/>
 <instance part="SUPPLY40" gate="GND" x="134.62" y="-71.12"/>
 <instance part="+3V5" gate="G$1" x="152.4" y="-60.96"/>
-<instance part="SUPPLY31" gate="GND" x="157.48" y="-195.58"/>
+<instance part="SUPPLY31" gate="GND" x="137.16" y="-182.88"/>
 <instance part="A0" gate="G$1" x="30.48" y="-165.1"/>
 <instance part="A2" gate="G$1" x="30.48" y="-185.42"/>
 <instance part="A3" gate="G$1" x="30.48" y="-195.58"/>
@@ -29407,11 +29407,11 @@ Connect to level shift I2C?</text>
 <instance part="+3V13" gate="G$1" x="35.56" y="-119.38"/>
 <instance part="A1" gate="G$1" x="30.48" y="-175.26"/>
 <instance part="SUPPLY47" gate="GND" x="20.32" y="-177.8"/>
-<instance part="SUPPLY52" gate="GND" x="109.22" y="-200.66"/>
-<instance part="RESET" gate="G$1" x="157.48" y="-180.34" rot="R180"/>
+<instance part="SUPPLY52" gate="GND" x="91.44" y="-180.34"/>
+<instance part="RESET" gate="G$1" x="139.7" y="-175.26"/>
 <instance part="SUPPLY53" gate="GND" x="63.5" y="-208.28"/>
 <instance part="D2" gate="G$1" x="109.22" y="-160.02" rot="R180"/>
-<instance part="LOG" gate="G$1" x="109.22" y="-172.72" rot="R180"/>
+<instance part="LOG" gate="G$1" x="93.98" y="-170.18"/>
 <instance part="FRAME1" gate="G$1" x="0" y="-248.92"/>
 <instance part="FRAME1" gate="G$2" x="83.82" y="-248.92" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="96.52" y="-247.65" size="2.54" layer="94"/>
@@ -29523,11 +29523,6 @@ Connect to level shift I2C?</text>
 <pinref part="U$9" gate="G$1" pin="NC"/>
 </segment>
 <segment>
-<wire x1="157.48" y1="-180.34" x2="157.48" y2="-193.04" width="0.1524" layer="91"/>
-<pinref part="SUPPLY31" gate="GND" pin="GND"/>
-<pinref part="RESET" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="A3" gate="G$1" pin="1"/>
 <pinref part="SUPPLY42" gate="GND" pin="GND"/>
 <wire x1="20.32" y1="-195.58" x2="25.4" y2="-195.58" width="0.1524" layer="91"/>
@@ -29551,11 +29546,6 @@ Connect to level shift I2C?</text>
 <pinref part="A1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY47" gate="GND" pin="GND"/>
 <wire x1="20.32" y1="-175.26" x2="25.4" y2="-175.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY52" gate="GND" pin="GND"/>
-<wire x1="109.22" y1="-172.72" x2="109.22" y2="-198.12" width="0.1524" layer="91"/>
-<pinref part="LOG" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY53" gate="GND" pin="GND"/>
@@ -29590,6 +29580,24 @@ Connect to level shift I2C?</text>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <pinref part="J2" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="LOG" gate="G$1" pin="1"/>
+<pinref part="LOG" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="-170.18" x2="93.98" y2="-172.72" width="0.1524" layer="91"/>
+<pinref part="SUPPLY52" gate="GND" pin="GND"/>
+<wire x1="93.98" y1="-172.72" x2="91.44" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-172.72" x2="91.44" y2="-177.8" width="0.1524" layer="91"/>
+<junction x="93.98" y="-172.72"/>
+</segment>
+<segment>
+<pinref part="RESET" gate="G$1" pin="1"/>
+<pinref part="RESET" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="-175.26" x2="139.7" y2="-177.8" width="0.1524" layer="91"/>
+<pinref part="SUPPLY31" gate="GND" pin="GND"/>
+<wire x1="139.7" y1="-177.8" x2="137.16" y2="-177.8" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-177.8" x2="137.16" y2="-180.34" width="0.1524" layer="91"/>
+<junction x="139.7" y="-177.8"/>
+</segment>
 </net>
 <net name="TX-O" class="0">
 <segment>
@@ -29622,10 +29630,12 @@ Connect to level shift I2C?</text>
 <label x="129.54" y="-63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="157.48" y1="-175.26" x2="157.48" y2="-177.8" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="-175.26" x2="170.18" y2="-175.26" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-175.26" x2="170.18" y2="-175.26" width="0.1524" layer="91"/>
 <label x="162.56" y="-175.26" size="1.778" layer="95"/>
-<pinref part="RESET" gate="G$1" pin="2"/>
+<pinref part="RESET" gate="G$1" pin="3"/>
+<pinref part="RESET" gate="G$1" pin="4"/>
+<wire x1="154.94" y1="-175.26" x2="154.94" y2="-177.8" width="0.1524" layer="91"/>
+<junction x="154.94" y="-175.26"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -29820,13 +29830,6 @@ Connect to level shift I2C?</text>
 <pinref part="R_LED1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="LOG" gate="G$1" pin="2"/>
-<pinref part="D2" gate="G$1" pin="K"/>
-<wire x1="109.22" y1="-170.18" x2="109.22" y2="-162.56" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="D4" class="0">
 <segment>
 <wire x1="53.34" y1="-45.72" x2="63.5" y2="-45.72" width="0.1524" layer="91"/>
@@ -29907,6 +29910,16 @@ Connect to level shift I2C?</text>
 <pinref part="JP2" gate="G$1" pin="3"/>
 <wire x1="157.48" y1="-119.38" x2="152.4" y2="-119.38" width="0.1524" layer="91"/>
 <label x="152.4" y="-119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="K"/>
+<pinref part="LOG" gate="G$1" pin="3"/>
+<wire x1="109.22" y1="-162.56" x2="109.22" y2="-170.18" width="0.1524" layer="91"/>
+<pinref part="LOG" gate="G$1" pin="4"/>
+<wire x1="109.22" y1="-172.72" x2="109.22" y2="-170.18" width="0.1524" layer="91"/>
+<junction x="109.22" y="-170.18"/>
 </segment>
 </net>
 </nets>
