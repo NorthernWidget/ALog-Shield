@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -30378,7 +30378,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="129.54" y="-10.16" size="1.778" layer="97">MICROCONTROLLER, SHIELD LAYOUT,
 &amp; INDICATOR LED</text>
 <text x="132.08" y="-104.14" size="1.778" layer="97">USER IO &amp; REFERENCE RESISTORS</text>
-<text x="173.736" y="-242.57" size="2.54" layer="97">2.2.1</text>
+<text x="173.736" y="-242.57" size="2.54" layer="97">2.2.0</text>
 <text x="171.196" y="-247.65" size="2.54" layer="97">1/2</text>
 <text x="152.4" y="-220.98" size="1.778" layer="97">Andrew Wickert
 Chad Sandell</text>
@@ -30921,15 +30921,16 @@ Chad Sandell</text>
 <wire x1="0" y1="187.96" x2="185.42" y2="187.96" width="0.1524" layer="97" style="dashdot"/>
 <text x="137.16" y="241.3" size="1.778" layer="97">SD CARD AND LEVEL SHIFTER</text>
 <text x="129.54" y="180.34" size="1.778" layer="97">POWER: SIMPLY USE ARDUINO 3V3</text>
-<text x="173.736" y="5.842" size="2.54" layer="97">2.2.1</text>
+<text x="173.736" y="5.842" size="2.54" layer="97">2.2.0</text>
 <text x="90.17" y="26.416" size="5.08" layer="97">ALOG</text>
 <text x="170.942" y="1.016" size="2.54" layer="97">2/2</text>
 <wire x1="0" y1="81.28" x2="104.14" y2="81.28" width="0.1524" layer="97" style="dashdot"/>
 <text x="152.4" y="27.94" size="1.778" layer="97">Andrew Wickert
 Chad Sandell</text>
-<text x="10.16" y="68.58" size="1.778" layer="97">Released under the Creative Commons Attribution Share-Alike 3.0 License
+<text x="10.16" y="66.04" size="1.778" layer="97">Released under the Creative Commons Attribution Share-Alike 3.0 License
 http://creativecommons.org/licenses/by-sa/3.0
-Design by: Andrew D. Wickert and Chad T. Sandell</text>
+Design by: Andrew D. Wickert and Chad T. Sandell
+with assistance from Bobby Schulz</text>
 <wire x1="104.14" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="104.14" y1="35.56" x2="104.14" y2="81.28" width="0.1524" layer="97" style="dashdot"/>
 <text x="114.3" y="76.2" size="1.778" layer="97">JUMPER: REFERENCE ANALOG TO 3V3 INSTEAD OF VCC</text>
