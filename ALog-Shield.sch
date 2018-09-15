@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -30378,13 +30378,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="129.54" y="-10.16" size="1.778" layer="97">MICROCONTROLLER, SHIELD LAYOUT,
 &amp; INDICATOR LED</text>
 <text x="132.08" y="-104.14" size="1.778" layer="97">USER IO &amp; REFERENCE RESISTORS</text>
-<text x="173.736" y="-242.57" size="2.54" layer="97">2.2.0a</text>
+<text x="173.736" y="-242.57" size="2.54" layer="97">2.2.1</text>
 <text x="171.196" y="-247.65" size="2.54" layer="97">1/2</text>
 <text x="152.4" y="-220.98" size="1.778" layer="97">Andrew Wickert
 Chad Sandell</text>
 <text x="90.17" y="-222.504" size="5.08" layer="97">ALOG</text>
-<text x="142.24" y="-81.28" size="1.778" layer="91">IO Ref should NOT be connected to 5v
-Connect to level shift I2C?</text>
 </plain>
 <instances>
 <instance part="U$9" gate="G$1" x="91.44" y="-45.72" rot="R90"/>
@@ -30392,7 +30390,7 @@ Connect to level shift I2C?</text>
 <instance part="SUPPLY39" gate="GND" x="160.02" y="-60.96"/>
 <instance part="SUPPLY40" gate="GND" x="134.62" y="-71.12"/>
 <instance part="+3V5" gate="G$1" x="152.4" y="-60.96"/>
-<instance part="SUPPLY31" gate="GND" x="137.16" y="-182.88"/>
+<instance part="SUPPLY31" gate="GND" x="127" y="-177.8"/>
 <instance part="A0" gate="G$1" x="30.48" y="-165.1"/>
 <instance part="A2" gate="G$1" x="30.48" y="-185.42"/>
 <instance part="A3" gate="G$1" x="30.48" y="-195.58"/>
@@ -30406,8 +30404,8 @@ Connect to level shift I2C?</text>
 <instance part="+3V13" gate="G$1" x="35.56" y="-119.38"/>
 <instance part="A1" gate="G$1" x="30.48" y="-175.26"/>
 <instance part="SUPPLY47" gate="GND" x="20.32" y="-177.8"/>
-<instance part="SUPPLY52" gate="GND" x="91.44" y="-180.34"/>
-<instance part="RESET" gate="G$1" x="139.7" y="-175.26"/>
+<instance part="SUPPLY52" gate="GND" x="91.44" y="-177.8"/>
+<instance part="RESET" gate="G$1" x="129.54" y="-170.18"/>
 <instance part="SUPPLY53" gate="GND" x="63.5" y="-208.28"/>
 <instance part="D2" gate="G$1" x="109.22" y="-160.02" rot="R180"/>
 <instance part="LOG" gate="G$1" x="93.98" y="-170.18"/>
@@ -30453,13 +30451,6 @@ Connect to level shift I2C?</text>
 <wire x1="12.7" y1="-134.62" x2="50.8" y2="-134.62" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="U$9" gate="G$1" pin="IOREF"/>
-<wire x1="124.46" y1="-66.04" x2="137.16" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="-66.04" x2="137.16" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="-71.12" x2="149.86" y2="-71.12" width="0.1524" layer="91"/>
-<label x="142.24" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DI" class="0">
@@ -30585,17 +30576,17 @@ Connect to level shift I2C?</text>
 <wire x1="93.98" y1="-170.18" x2="93.98" y2="-172.72" width="0.1524" layer="91"/>
 <pinref part="SUPPLY52" gate="GND" pin="GND"/>
 <wire x1="93.98" y1="-172.72" x2="91.44" y2="-172.72" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="-172.72" x2="91.44" y2="-177.8" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-172.72" x2="91.44" y2="-175.26" width="0.1524" layer="91"/>
 <junction x="93.98" y="-172.72"/>
 </segment>
 <segment>
 <pinref part="RESET" gate="G$1" pin="1"/>
 <pinref part="RESET" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="-175.26" x2="139.7" y2="-177.8" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-170.18" x2="129.54" y2="-172.72" width="0.1524" layer="91"/>
 <pinref part="SUPPLY31" gate="GND" pin="GND"/>
-<wire x1="139.7" y1="-177.8" x2="137.16" y2="-177.8" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="-177.8" x2="137.16" y2="-180.34" width="0.1524" layer="91"/>
-<junction x="139.7" y="-177.8"/>
+<wire x1="129.54" y1="-172.72" x2="127" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="127" y1="-172.72" x2="127" y2="-175.26" width="0.1524" layer="91"/>
+<junction x="129.54" y="-172.72"/>
 </segment>
 </net>
 <net name="TX-O" class="0">
@@ -30629,12 +30620,12 @@ Connect to level shift I2C?</text>
 <label x="129.54" y="-63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="-175.26" x2="170.18" y2="-175.26" width="0.1524" layer="91"/>
-<label x="162.56" y="-175.26" size="1.778" layer="95"/>
+<wire x1="144.78" y1="-170.18" x2="160.02" y2="-170.18" width="0.1524" layer="91"/>
+<label x="152.4" y="-170.18" size="1.778" layer="95"/>
 <pinref part="RESET" gate="G$1" pin="3"/>
 <pinref part="RESET" gate="G$1" pin="4"/>
-<wire x1="154.94" y1="-175.26" x2="154.94" y2="-177.8" width="0.1524" layer="91"/>
-<junction x="154.94" y="-175.26"/>
+<wire x1="144.78" y1="-170.18" x2="144.78" y2="-172.72" width="0.1524" layer="91"/>
+<junction x="144.78" y="-170.18"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -30792,7 +30783,7 @@ Connect to level shift I2C?</text>
 <label x="43.18" y="-48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="58.42" y1="-160.02" x2="104.14" y2="-160.02" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-160.02" x2="104.14" y2="-160.02" width="0.1524" layer="91"/>
 <label x="78.74" y="-160.02" size="1.778" layer="95"/>
 <pinref part="D2" gate="G$1" pin="A2"/>
 </segment>
@@ -30930,7 +30921,7 @@ Connect to level shift I2C?</text>
 <wire x1="0" y1="187.96" x2="185.42" y2="187.96" width="0.1524" layer="97" style="dashdot"/>
 <text x="137.16" y="241.3" size="1.778" layer="97">SD CARD AND LEVEL SHIFTER</text>
 <text x="129.54" y="180.34" size="1.778" layer="97">POWER: SIMPLY USE ARDUINO 3V3</text>
-<text x="173.736" y="5.842" size="2.54" layer="97">2.2.0a</text>
+<text x="173.736" y="5.842" size="2.54" layer="97">2.2.1</text>
 <text x="90.17" y="26.416" size="5.08" layer="97">ALOG</text>
 <text x="170.942" y="1.016" size="2.54" layer="97">2/2</text>
 <wire x1="0" y1="81.28" x2="104.14" y2="81.28" width="0.1524" layer="97" style="dashdot"/>
@@ -30942,12 +30933,11 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <wire x1="104.14" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="104.14" y1="35.56" x2="104.14" y2="81.28" width="0.1524" layer="97" style="dashdot"/>
 <text x="114.3" y="76.2" size="1.778" layer="97">JUMPER: REFERENCE ANALOG TO 3V3 INSTEAD OF VCC</text>
-<text x="114.3" y="154.94" size="1.778" layer="91">If level shifters are used, these pull ups should be removed!</text>
 </plain>
 <instances>
-<instance part="LSHIFT1" gate="A" x="38.1" y="215.9"/>
-<instance part="LSHIFT1" gate="B" x="38.1" y="226.06"/>
-<instance part="LSHIFT1" gate="C" x="38.1" y="205.74"/>
+<instance part="LSHIFT1" gate="A" x="33.02" y="215.9"/>
+<instance part="LSHIFT1" gate="B" x="33.02" y="226.06"/>
+<instance part="LSHIFT1" gate="C" x="33.02" y="205.74"/>
 <instance part="LSHIFT1" gate="D" x="157.48" y="200.66"/>
 <instance part="LSHIFT1" gate="E" x="114.3" y="215.9" smashed="yes">
 <attribute name="NAME" x="119.38" y="219.075" size="1.778" layer="95"/>
@@ -30995,8 +30985,8 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <nets>
 <net name="DI" class="0">
 <segment>
-<wire x1="27.94" y1="226.06" x2="17.78" y2="226.06" width="0.1524" layer="91"/>
-<label x="17.78" y="226.06" size="1.778" layer="95"/>
+<wire x1="22.86" y1="226.06" x2="12.7" y2="226.06" width="0.1524" layer="91"/>
+<label x="12.7" y="226.06" size="1.778" layer="95"/>
 <pinref part="LSHIFT1" gate="B" pin="I"/>
 </segment>
 </net>
@@ -31004,15 +30994,15 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 <segment>
 <wire x1="66.04" y1="228.6" x2="48.26" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="228.6" x2="48.26" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="236.22" x2="48.26" y2="236.22" width="0.1524" layer="91"/>
-<label x="17.78" y="236.22" size="1.778" layer="95"/>
+<wire x1="12.7" y1="236.22" x2="48.26" y2="236.22" width="0.1524" layer="91"/>
+<label x="12.7" y="236.22" size="1.778" layer="95"/>
 <pinref part="SD1" gate="G$1" pin="DATA_OUT"/>
 </segment>
 </net>
 <net name="CLK" class="0">
 <segment>
-<wire x1="27.94" y1="215.9" x2="17.78" y2="215.9" width="0.1524" layer="91"/>
-<label x="17.78" y="215.9" size="1.778" layer="95"/>
+<wire x1="22.86" y1="215.9" x2="12.7" y2="215.9" width="0.1524" layer="91"/>
+<label x="12.7" y="215.9" size="1.778" layer="95"/>
 <pinref part="LSHIFT1" gate="A" pin="I"/>
 </segment>
 </net>
@@ -31095,7 +31085,7 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 </net>
 <net name="SD_DI" class="0">
 <segment>
-<wire x1="48.26" y1="226.06" x2="66.04" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="226.06" x2="66.04" y2="226.06" width="0.1524" layer="91"/>
 <label x="48.26" y="226.06" size="1.778" layer="95"/>
 <pinref part="LSHIFT1" gate="B" pin="O"/>
 <pinref part="SD1" gate="G$1" pin="DATA_IN"/>
@@ -31103,6 +31093,7 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 </net>
 <net name="SD_CLK" class="0">
 <segment>
+<wire x1="43.18" y1="215.9" x2="48.26" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="215.9" x2="48.26" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="223.52" x2="66.04" y2="223.52" width="0.1524" layer="91"/>
 <label x="48.26" y="223.52" size="1.778" layer="95"/>
@@ -31112,7 +31103,7 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 </net>
 <net name="SD_CS" class="0">
 <segment>
-<wire x1="48.26" y1="205.74" x2="50.8" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="205.74" x2="50.8" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="205.74" x2="50.8" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="220.98" x2="66.04" y2="220.98" width="0.1524" layer="91"/>
 <label x="50.8" y="220.98" size="1.778" layer="95"/>
@@ -31122,8 +31113,8 @@ Design by: Andrew D. Wickert and Chad T. Sandell</text>
 </net>
 <net name="CS-SD" class="0">
 <segment>
-<wire x1="27.94" y1="205.74" x2="17.78" y2="205.74" width="0.1524" layer="91"/>
-<label x="17.78" y="205.74" size="1.778" layer="95"/>
+<wire x1="22.86" y1="205.74" x2="12.7" y2="205.74" width="0.1524" layer="91"/>
+<label x="12.7" y="205.74" size="1.778" layer="95"/>
 <pinref part="LSHIFT1" gate="C" pin="I"/>
 </segment>
 </net>

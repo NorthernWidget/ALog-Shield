@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13306,6 +13306,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -13562,13 +13565,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="16.51" y1="43.942" x2="15.875" y2="44.577" width="0.508" layer="1"/>
 <contactref element="RTC1" pad="2"/>
 <wire x1="16.002" y1="45.8724" x2="15.875" y2="45.968" width="0.2032" layer="1"/>
-<contactref element="U$9" pad="IOREF"/>
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="2"/>
 <wire x1="15.875" y1="44.577" x2="15.875" y2="45.968" width="0.508" layer="1"/>
 <wire x1="22.352" y1="43.942" x2="22.352" y2="21.1455" width="0.508" layer="1"/>
 <wire x1="28.194" y1="57.2516" x2="22.098" y2="57.2516" width="0.3048" layer="1"/>
-<wire x1="22.352" y1="21.1455" x2="14.9225" y2="13.716" width="0.508" layer="1"/>
 <wire x1="22.352" y1="21.1455" x2="26.7335" y2="16.764" width="0.508" layer="1"/>
 <wire x1="26.7335" y1="16.764" x2="30.734" y2="16.764" width="0.508" layer="1"/>
 <wire x1="32.258" y1="15.24" x2="30.734" y2="16.764" width="0.508" layer="1"/>
@@ -14027,6 +14028,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="49.1871" y1="52.7431" x2="46.144" y2="49.7" width="0.3048" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 <errors>
 <approved hash="3,1,ad65a790a791ad64"/>
 <approved hash="3,1,b3fdb1ffb1ffb3fd"/>
