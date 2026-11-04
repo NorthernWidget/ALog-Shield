@@ -1,0 +1,21 @@
+{
+  "title": "ALog-Shield",
+  "description": "An Arduino shield with all the capabilities of the ALog BottleLogger.",
+  "upload_type": "other",
+  "creators": [
+    {
+      "name": "Wickert, Andy",
+      "affiliation": "University of Minnesota, Department of Earth Science",
+      "orcid": "0000-0002-9545-3365"
+    },
+    {
+      "name": "Sandell, Chad",
+      "affiliation": "Northern Widget"
+    },
+    {
+      "name": "Schulz, Bobby",
+      "orcid": "0000-0002-9272-4756"
+    }
+  ],
+  "license": "cc-by-sa-4.0"
+}
